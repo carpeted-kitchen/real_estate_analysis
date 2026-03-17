@@ -1,0 +1,12 @@
+SEQ,VARIABLE,DESCRIPTION,VINTAGE,UNIT,TYPE,AGGREGATION_TYPE,WEIGHT_FIELD,UNIVERSE,MEDIAN_UBOUND,NATIVE_GEO
+2,NAME,Geographic Area Name,,String,,,,,,
+3,CRMA3PERC,Personal Crime,2023,Index,Numeric,Weighted Sum,HHDA3RSK,,,Block Group
+4,CRMA3MURD,Murder,2023,Index,Numeric,Weighted Sum,HHDA3RSK,,,Block Group
+5,CRMA3RAPE,Rape,2023,Index,Numeric,Weighted Sum,HHDA3RSK,,,Block Group
+6,CRMA3ROBB,Robbery,2023,Index,Numeric,Weighted Sum,HHDA3RSK,,,Block Group
+7,CRMA3ASST,Assault,2023,Index,Numeric,Weighted Sum,HHDA3RSK,,,Block Group
+8,CRMA3PROC,Property Crime,2023,Index,Numeric,Weighted Sum,HHDA3RSK,,,Block Group
+9,CRMA3BURG,Burglary,2023,Index,Numeric,Weighted Sum,HHDA3RSK,,,Block Group
+10,CRMA3LARC,Larceny,2023,Index,Numeric,Weighted Sum,HHDA3RSK,,,Block Group
+11,CRMA3MVEH,Motor Vehicle Theft,2023,Index,Numeric,Weighted Sum,HHDA3RSK,,,Block Group
+12,CRMA3TOTC,Total Crime,2023,Index,Numeric,Weighted Sum,HHDA3RSK,,,Block Group

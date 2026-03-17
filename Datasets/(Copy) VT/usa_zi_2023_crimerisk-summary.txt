@@ -1,0 +1,41 @@
+SNAPSHOT PRODUCTION SUMMARY
+Date: 02-25-2026
+Time: 12:43:31
+Library Version:  25b_1104
+Template:         d:\snapshot2025b\var files\historical\2023_crimerisk.rpt
+Geographic Level: [ZI] ZIP Code  (2022)
+
+FIELD REFERENCE
+
+Number  Fields     Description
+
+     1  ID         Geographic Area Code
+     2  NAME       Geographic Area Name
+     3  CRMA3PERC  Personal Crime
+     4  CRMA3MURD  Murder
+     5  CRMA3RAPE  Rape
+     6  CRMA3ROBB  Robbery
+     7  CRMA3ASST  Assault
+     8  CRMA3PROC  Property Crime
+     9  CRMA3BURG  Burglary
+    10  CRMA3LARC  Larceny
+    11  CRMA3MVEH  Motor Vehicle Theft
+    12  CRMA3TOTC  Total Crime
+
+FORMULA REFERENCE
+
+No library or user formulas
+
+END NOTES
+
+1. Index values are 100 based, with the national average=100.  A value of 50 indicates one-half the national average, and a value of 200 indicates twice the national average.
+
+
+REFERENCES
+
+     https://appliedgeographic.com/Data/Methodologies/CrimeRisk.pdf
+
+Records written: 40757
+Elapsed time   : 0.40 seconds, 101892.50 records/second
+
+SnapShot 3.00 Build  1 (1/29/2026 01:47 PM)

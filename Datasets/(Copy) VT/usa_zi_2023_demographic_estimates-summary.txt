@@ -1,0 +1,1502 @@
+SNAPSHOT PRODUCTION SUMMARY
+Date: 02-25-2026
+Time: 12:43:32
+Library Version:  25b_1104
+Template:         d:\snapshot2025b\var files\historical\2023_demographic_estimates.rpt
+Geographic Level: [ZI] ZIP Code  (2022)
+
+FIELD REFERENCE
+
+Number  Fields     Description
+
+     1  ID         Geographic Area Code
+     2  NAME       Geographic Area Name
+     3  HINE3A2501 Householder Age 25-34 with Income Less than $10000
+     4  HINE3A2502 Householder Age 25-34 with Income $10000 to $14999
+     5  HINE3A2503 Householder Age 25-34 with Income $15000 to $19999
+     6  HINE3A2504 Householder Age 25-34 with Income $20000 to $24999
+     7  HINE3A2505 Householder Age 25-34 with Income $25000 to $29999
+     8  HINE3A2506 Householder Age 25-34 with Income $30000 to $34999
+     9  HINE3A2507 Householder Age 25-34 with Income $35000 to $39999
+    10  HINE3A2508 Householder Age 25-34 with Income $40000 to $44999
+    11  HINE3A2509 Householder Age 25-34 with Income $45000 to $49999
+    12  HINE3A2510 Householder Age 25-34 with Income $50000 to $59999
+    13  HINE3A2511 Householder Age 25-34 with Income $60000 to $74999
+    14  HINE3A2512 Householder Age 25-34 with Income $75000 to $99999
+    15  HINE3A2513 Householder Age 25-34 with Income $100000 to $124999
+    16  HINE3A2514 Householder Age 25-34 with Income $125000 to $149999
+    17  HINE3A2515 Householder Age 25-34 with Income $150000 to $199999
+    18  HINE3A2516 Householder Age 25-34 with Income $200000 or more
+    19  HINE3A3501 Householder Age 35-44 with Income Less than $10000
+    20  HINE3A3502 Householder Age 35-44 with Income $10000 to $14999
+    21  HINE3A3503 Householder Age 35-44 with Income $15000 to $19999
+    22  HINE3A3504 Householder Age 35-44 with Income $20000 to $24999
+    23  HINE3A3505 Householder Age 35-44 with Income $25000 to $29999
+    24  HINE3A3506 Householder Age 35-44 with Income $30000 to $34999
+    25  HINE3A3507 Householder Age 35-44 with Income $35000 to $39999
+    26  HINE3A3508 Householder Age 35-44 with Income $40000 to $44999
+    27  HINE3A3509 Householder Age 35-44 with Income $45000 to $49999
+    28  HINE3A3510 Householder Age 35-44 with Income $50000 to $59999
+    29  HINE3A3511 Householder Age 35-44 with Income $60000 to $74999
+    30  HINE3A3512 Householder Age 35-44 with Income $75000 to $99999
+    31  HINE3A3513 Householder Age 35-44 with Income $100000 to $124999
+    32  HINE3A3514 Householder Age 35-44 with Income $125000 to $149999
+    33  HINE3A3515 Householder Age 35-44 with Income $150000 to $199999
+    34  HINE3A3516 Householder Age 35-44 with Income $200000 or more
+    35  HINE3A4501 Householder Age 45-54 with Income Less than $10000
+    36  HINE3A4502 Householder Age 45-54 with Income $10000 to $14999
+    37  HINE3A4503 Householder Age 45-54 with Income $15000 to $19999
+    38  HINE3A4504 Householder Age 45-54 with Income $20000 to $24999
+    39  HINE3A4505 Householder Age 45-54 with Income $25000 to $29999
+    40  HINE3A4506 Householder Age 45-54 with Income $30000 to $34999
+    41  HINE3A4507 Householder Age 45-54 with Income $35000 to $39999
+    42  HINE3A4508 Householder Age 45-54 with Income $40000 to $44999
+    43  HINE3A4509 Householder Age 45-54 with Income $45000 to $49999
+    44  HINE3A4510 Householder Age 45-54 with Income $50000 to $59999
+    45  HINE3A4511 Householder Age 45-54 with Income $60000 to $74999
+    46  HINE3A4512 Householder Age 45-54 with Income $75000 to $99999
+    47  HINE3A4513 Householder Age 45-54 with Income $100000 to $124999
+    48  HINE3A4514 Householder Age 45-54 with Income $125000 to $149999
+    49  HINE3A4515 Householder Age 45-54 with Income $150000 to $199999
+    50  HINE3A4516 Householder Age 45-54 with Income $200000 or more
+    51  HINE3A5501 Householder Age 55-64 with Income Less than $10000
+    52  HINE3A5502 Householder Age 55-64 with Income $10000 to $14999
+    53  HINE3A5503 Householder Age 55-64 with Income $15000 to $19999
+    54  HINE3A5504 Householder Age 55-64 with Income $20000 to $24999
+    55  HINE3A5505 Householder Age 55-64 with Income $25000 to $29999
+    56  HINE3A5506 Householder Age 55-64 with Income $30000 to $34999
+    57  HINE3A5507 Householder Age 55-64 with Income $35000 to $39999
+    58  HINE3A5508 Householder Age 55-64 with Income $40000 to $44999
+    59  HINE3A5509 Householder Age 55-64 with Income $45000 to $49999
+    60  HINE3A5510 Householder Age 55-64 with Income $50000 to $59999
+    61  HINE3A5511 Householder Age 55-64 with Income $60000 to $74999
+    62  HINE3A5512 Householder Age 55-64 with Income $75000 to $99999
+    63  HINE3A5513 Householder Age 55-64 with Income $100000 to $124999
+    64  HINE3A5514 Householder Age 55-64 with Income $125000 to $149999
+    65  HINE3A5515 Householder Age 55-64 with Income $150000 to $199999
+    66  HINE3A5516 Householder Age 55-64 with Income $200000 or more
+    67  HINE3A6501 Householder Age 65-74 with Income Less than $10000
+    68  HINE3A6502 Householder Age 65-74 with Income $10000 to $14999
+    69  HINE3A6503 Householder Age 65-74 with Income $15000 to $19999
+    70  HINE3A6504 Householder Age 65-74 with Income $20000 to $24999
+    71  HINE3A6505 Householder Age 65-74 with Income $25000 to $29999
+    72  HINE3A6506 Householder Age 65-74 with Income $30000 to $34999
+    73  HINE3A6507 Householder Age 65-74 with Income $35000 to $39999
+    74  HINE3A6508 Householder Age 65-74 with Income $40000 to $44999
+    75  HINE3A6509 Householder Age 65-74 with Income $45000 to $49999
+    76  HINE3A6510 Householder Age 65-74 with Income $50000 to $59999
+    77  HINE3A6511 Householder Age 65-74 with Income $60000 to $74999
+    78  HINE3A6512 Householder Age 65-74 with Income $75000 to $99999
+    79  HINE3A6513 Householder Age 65-74 with Income $100000 to $124999
+    80  HINE3A6514 Householder Age 65-74 with Income $125000 to $149999
+    81  HINE3A6515 Householder Age 65-74 with Income $150000 to $199999
+    82  HINE3A6516 Householder Age 65-74 with Income $200000 or more
+    83  HINE3A7501 Householder Age 75+ with Income Less than $10000
+    84  HINE3A7502 Householder Age 75+ with Income $10000 to $14999
+    85  HINE3A7503 Householder Age 75+ with Income $15000 to $19999
+    86  HINE3A7504 Householder Age 75+ with Income $20000 to $24999
+    87  HINE3A7505 Householder Age 75+ with Income $25000 to $29999
+    88  HINE3A7506 Householder Age 75+ with Income $30000 to $34999
+    89  HINE3A7507 Householder Age 75+ with Income $35000 to $39999
+    90  HINE3A7508 Householder Age 75+ with Income $40000 to $44999
+    91  HINE3A7509 Householder Age 75+ with Income $45000 to $49999
+    92  HINE3A7510 Householder Age 75+ with Income $50000 to $59999
+    93  HINE3A7511 Householder Age 75+ with Income $60000 to $74999
+    94  HINE3A7512 Householder Age 75+ with Income $75000 to $99999
+    95  HINE3A7513 Householder Age 75+ with Income $100000 to $124999
+    96  HINE3A7514 Householder Age 75+ with Income $125000 to $149999
+    97  HINE3A7515 Householder Age 75+ with Income $150000 to $199999
+    98  HINE3A7516 Householder Age 75+ with Income $200000 or more
+    99  HINE3A2401 Householder Age <25 with Income Less than $10000
+   100  HINE3A2402 Householder Age <25 with Income $10000 to $14999
+   101  HINE3A2403 Householder Age <25 with Income $15000 to $19999
+   102  HINE3A2404 Householder Age <25 with Income $20000 to $24999
+   103  HINE3A2405 Householder Age <25 with Income $25000 to $29999
+   104  HINE3A2406 Householder Age <25 with Income $30000 to $34999
+   105  HINE3A2407 Householder Age <25 with Income $35000 to $39999
+   106  HINE3A2408 Householder Age <25 with Income $40000 to $44999
+   107  HINE3A2409 Householder Age <25 with Income $45000 to $49999
+   108  HINE3A2410 Householder Age <25 with Income $50000 to $59999
+   109  HINE3A2411 Householder Age <25 with Income $60000 to $74999
+   110  HINE3A2412 Householder Age <25 with Income $75000 to $99999
+   111  HINE3A2413 Householder Age <25 with Income $100000 to $124999
+   112  HINE3A2414 Householder Age <25 with Income $125000 to $149999
+   113  HINE3A2415 Householder Age <25 with Income $150000 to $199999
+   114  HINE3A2416 Householder Age <25 with Income $200000 or more
+   115  HINE3MED24 Median Income Age <25
+   116  HINE3MED25 Median Income Age 25-34
+   117  HINE3MED35 Median Income Age 35-44
+   118  HINE3MED45 Median Income Age 45-54
+   119  HINE3MED55 Median Income Age 55-64
+   120  HINE3MED65 Median Income Age 65-74
+   121  HINE3MED75 Median Income Age 75+
+   122  HINE3M2544 Median Income Age 25-44
+   123  HINE3M4564 Median Income Age 45-64
+   124  HINE3MGT65 Median Income Age 65+
+   125  INCX3A     Ratio of income to poverty under 0.50
+   126  INCX3BC    Ratio of income to poverty 0.50 - 0.99
+   127  INCX3D     Ratio of income to poverty 1.00 - 1.24
+   128  INCX3E     Ratio of income to poverty 1.25 - 1.49
+   129  INCX3FG    Ratio of income to poverty 1.50 - 1.74
+   130  INCX3H     Ratio of income to poverty 1.75 - 1.99
+   131  INCX3I     Ratio of income to poverty over 2.00
+   132  POVX3MED   Median Ratio of Income to Poverty
+   133  POVX3UNDER Percent Population Below Poverty Level
+   134  RNTX301    Cash Rent: Less than $100
+   135  RNTX302    Cash Rent: $100 to $149
+   136  RNTX303    Cash Rent: $150 to $199
+   137  RNTX304    Cash Rent: $200 to $249
+   138  RNTX305    Cash Rent: $250 to $299
+   139  RNTX306    Cash Rent: $300 to $349
+   140  RNTX307    Cash Rent: $350 to $399
+   141  RNTX308    Cash Rent: $400 to $449
+   142  RNTX309    Cash Rent: $450 to $499
+   143  RNTX310    Cash Rent: $500 to $549
+   144  RNTX311    Cash Rent: $550 to $599
+   145  RNTX312    Cash Rent: $600 to $649
+   146  RNTX313    Cash Rent: $650 to $699
+   147  RNTX314    Cash Rent: $700 to $749
+   148  RNTX315    Cash Rent: $750 to $799
+   149  RNTX316    Cash Rent: $800 to $899
+   150  RNTX317    Cash Rent: $900 to $999
+   151  RNTX318    Cash Rent: $1,000 to $1,249
+   152  RNTX319    Cash Rent: $1,250 to $1,499
+   153  RNTX320    Cash Rent: $1,500 to $1,999
+   154  RNTX321    Cash Rent: $2,000 to $2,499
+   155  RNTX322    Cash Rent: $2,500 to $2,999
+   156  RNTX323    Cash Rent: $3,000 to $3,499
+   157  RNTX324    Cash Rent: $3,500 or more
+   158  RNTX325    Cash Rent: No cash rent
+   159  RNTX3MED   Median Cash Rent
+   160  DWLE3OCCUP Housing units occupied
+   161  DWLE3OWNED Occupied units owner
+   162  HUSX3O1DET Units in Structure: Owner occupied: 1, detached
+   163  HUSX3O1ATT Units in Structure: Owner occupied: 1, attached
+   164  HUSX3O2    Units in Structure: Owner occupied: 2
+   165  HUSX3O0304 Units in Structure: Owner occupied: 3 or 4
+   166  HUSX3O0509 Units in Structure: Owner occupied: 5 to 9
+   167  HUSX3O1019 Units in Structure: Owner occupied: 10 to 19
+   168  HUSX3O2049 Units in Structure: Owner occupied: 20 to 49
+   169  HUSX3OGT50 Units in Structure: Owner occupied: 50 or more
+   170  HUSX3OMOB  Units in Structure: Owner occupied: Mobile home
+   171  HUSX3OBOAT Units in Structure: Owner occupied: Boat, RV, van, etc.
+   172  HUSX3R1DET Units in Structure: Renter occupied: 1, detached
+   173  HUSX3R1ATT Units in Structure: Renter occupied: 1, attached
+   174  HUSX3R2    Units in Structure: Renter occupied: 2
+   175  HUSX3R0304 Units in Structure: Renter occupied: 3 or 4
+   176  HUSX3R0509 Units in Structure: Renter occupied: 5 to 9
+   177  HUSX3R1019 Units in Structure: Renter occupied: 10 to 19
+   178  HUSX3R2049 Units in Structure: Renter occupied: 20 to 49
+   179  HUSX3RGT50 Units in Structure: Renter occupied: 50 or more
+   180  HUSX3RMOB  Units in Structure: Renter occupied: Mobile home
+   181  HUSX3RBOAT Units in Structure: Renter occupied: Boat, RV, van, etc.
+   182  HUSX31DET  Units in Structure: 1, detached
+   183  HUSX31ATT  Units in Structure: 1, attached
+   184  HUSX32     Units in Structure: 2
+   185  HUSX30304  Units in Structure: 3 or 4
+   186  HUSX30509  Units in Structure: 5 to 9
+   187  HUSX31019  Units in Structure: 10 to 19
+   188  HUSX32049  Units in Structure: 20 to 49
+   189  HUSX3GT50  Units in Structure: 50 or more
+   190  HUSX3MOB   Units in Structure: Mobile home
+   191  HUSX3BOAT  Units in Structure: Boat, RV, van, etc.
+   192  HOOX3V01   Value of Owner Occupied Housing Units: Less than $10,000
+   193  HOOX3V02   Value of Owner Occupied Housing Units: $10,000 to $14,999
+   194  HOOX3V03   Value of Owner Occupied Housing Units: $15,000 to $19,999
+   195  HOOX3V04   Value of Owner Occupied Housing Units: $20,000 to $24,999
+   196  HOOX3V05   Value of Owner Occupied Housing Units: $25,000 to $29,999
+   197  HOOX3V06   Value of Owner Occupied Housing Units: $30,000 to $34,999
+   198  HOOX3V07   Value of Owner Occupied Housing Units: $35,000 to $39,999
+   199  HOOX3V08   Value of Owner Occupied Housing Units: $40,000 to $49,999
+   200  HOOX3V09   Value of Owner Occupied Housing Units: $50,000 to $59,999
+   201  HOOX3V10   Value of Owner Occupied Housing Units: $60,000 to $69,999
+   202  HOOX3V11   Value of Owner Occupied Housing Units: $70,000 to $79,999
+   203  HOOX3V12   Value of Owner Occupied Housing Units: $80,000 to $89,999
+   204  HOOX3V13   Value of Owner Occupied Housing Units: $90,000 to $99,999
+   205  HOOX3V14   Value of Owner Occupied Housing Units: $100,000 to $124,999
+   206  HOOX3V15   Value of Owner Occupied Housing Units: $125,000 to $149,999
+   207  HOOX3V16   Value of Owner Occupied Housing Units: $150,000 to $174,999
+   208  HOOX3V17   Value of Owner Occupied Housing Units: $175,000 to $199,999
+   209  HOOX3V18   Value of Owner Occupied Housing Units: $200,000 to $249,999
+   210  HOOX3V19   Value of Owner Occupied Housing Units: $250,000 to $299,999
+   211  HOOX3V20   Value of Owner Occupied Housing Units: $300,000 to $399,999
+   212  HOOX3V21   Value of Owner Occupied Housing Units: $400,000 to $499,999
+   213  HOOX3V22   Value of Owner Occupied Housing Units: $500,000 to $749,999
+   214  HOOX3V23   Value of Owner Occupied Housing Units: $750,000 to $999,999
+   215  HOOX3V24   Value of Owner Occupied Housing Units: $1,000,000 to $1,499,999
+   216  HOOX3V25   Value of Owner Occupied Housing Units: $1,500,000 to $1,999,999
+   217  HOOX3V26   Value of Owner Occupied Housing Units: $2,000,000 or more
+   218  HOOX3MED   Median Value of Owner Occupied Housing Units
+   219  YBTX3O20UP Year Structure Built: Owner occupied: Built 2020 or later
+   220  YBTX3O1019 Year Structure Built: Owner occupied: Built 2010 to 2019
+   221  YBTX3O0009 Year Structure Built: Owner occupied: Built 2000 to 2009
+   222  YBTX3O9099 Year Structure Built: Owner occupied: Built 1990 to 1999
+   223  YBTX3O8089 Year Structure Built: Owner occupied: Built 1980 to 1989
+   224  YBTX3O7079 Year Structure Built: Owner occupied: Built 1970 to 1979
+   225  YBTX3O6069 Year Structure Built: Owner occupied: Built 1960 to 1969
+   226  YBTX3O5059 Year Structure Built: Owner occupied: Built 1950 to 1959
+   227  YBTX3O4049 Year Structure Built: Owner occupied: Built 1940 to 1949
+   228  YBTX3O39PR Year Structure Built: Owner occupied: Built 1939 or earlier
+   229  YBTX3R20UP Year Structure Built: Renter occupied: Built 2020 or later
+   230  YBTX3R1019 Year Structure Built: Renter occupied: Built 2010 to 2019
+   231  YBTX3R0009 Year Structure Built: Renter occupied: Built 2000 to 2009
+   232  YBTX3R9099 Year Structure Built: Renter occupied: Built 1990 to 1999
+   233  YBTX3R8089 Year Structure Built: Renter occupied: Built 1980 to 1989
+   234  YBTX3R7079 Year Structure Built: Renter occupied: Built 1970 to 1979
+   235  YBTX3R6069 Year Structure Built: Renter occupied: Built 1960 to 1969
+   236  YBTX3R5059 Year Structure Built: Renter occupied: Built 1950 to 1959
+   237  YBTX3R4049 Year Structure Built: Renter occupied: Built 1940 to 1949
+   238  YBTX3R39PR Year Structure Built: Renter occupied: Built 1939 or earlier
+   239  YBTX320UP  Year Structure Built:  Built 2020 or later
+   240  YBTX31019  Year Structure Built:  Built 2010 to 2019
+   241  YBTX30009  Year Structure Built:  Built 2000 to 2009
+   242  YBTX39099  Year Structure Built:  Built 1990 to 1999
+   243  YBTX38089  Year Structure Built:  Built 1980 to 1989
+   244  YBTX37079  Year Structure Built:  Built 1970 to 1979
+   245  YBTX36069  Year Structure Built:  Built 1960 to 1969
+   246  YBTX35059  Year Structure Built:  Built 1950 to 1959
+   247  YBTX34049  Year Structure Built:  Built 1940 to 1949
+   248  YBTX339PR  Year Structure Built:  Built 1939 or earlier
+   249  YBTX3MED   Median Housing Age
+   250  YBTX3MEDO  Median Housing Age (Owned Dwellings)
+   251  YBTX3MEDR  Median Housing Age (Rented Dwellings)
+   252  RACE3DOM   Dominant Race/Ethnicity Group
+   253  HHSE3MCFCH Families married couple w children
+   254  HHSE3LPMCH Families male no wife w children
+   255  HHSE3LPFCH Families female no husband children
+   256  HHSE3MCFNC Families married couple no children
+   257  HHSE3LPMNC Families male no wife no children
+   258  HHSE3LPFNC Families female no husband no children
+   259  HHDE3FAM   Family Households
+   260  HAGE31524  Households householder 15-24 yrs
+   261  HAGE32534  Households householder 25-34 yrs
+   262  HAGE33544  Households householder 35-44 yrs
+   263  HAGE34554  Households householder 45-54 yrs
+   264  HAGE35564  Households householder 55-64 yrs
+   265  HAGE36574  Households householder 65-74 yrs
+   266  HAGE37584  Households householder 75-84 yrs
+   267  HAGE3GT85  Households householder 85+ yrs
+   268  LNIX3ENGL  Household Language: English
+   269  LNIX3SPNIS Household Language: Spanish Linguistically isolated
+   270  LNIX3SPNN  Household Language: Spanish Not Linguistically isolated
+   271  LNIX3IEUIS Household Language: Other Indo-EuropeanLinguistically isolated
+   272  LNIX3IUEN  Household Language: Other Indo-European Not Linguistically isolated
+   273  LNIX3ASNIS Household Language: Asian and Pacific IslandLinguistically isolated
+   274  LNIX3ASNN  Household Language: Asian and Pacific Island Not Linguistically isolated
+   275  LNIX3OTHIN Household Language: OtherLinguistically isolated
+   276  LNIX3OTHN  Household Language: Other Not Linguistically isolated
+   277  LNIX3NENG  Non-English Speaking Households
+   278  LNIX3ENGP  Bilingual Households
+   279  LNIX3ISOL  Linguistically Isolated Households
+   280  HHDE3MEDAG Median Age of Householder
+   281  HSTE3OWN1  Owner Households - 1 Person
+   282  HSTE3OWN2  Owner Households - 2 Person
+   283  HSTE3OWN3  Owner Households - 3 Person
+   284  HSTE3OWN4  Owner Households - 4 Person
+   285  HSTE3OWN5  Owner Households - 5 Person
+   286  HSTE3OWN6  Owner Households - 6 Person
+   287  HSTE3OWN7  Owner Households - 7+ Person
+   288  HHDE3S1    Households 1-person
+   289  HHDE3S2    Households 2-persons
+   290  HHDE3S3    Households 3-persons
+   291  HHDE3S4    Households 4-persons
+   292  HHDE3S5    Households 5-persons
+   293  HHDE3S6    Households 6-persons
+   294  HHDE3S7    Households 7+ persons
+   295  HHDE3AVESZ Average Household Size
+   296  FAME3AVESZ Average Family Size
+   297  NFME3AVESZ Average Non-Family Household Size
+   298  AGHE3FAM   Families with Persons < 18
+   299  AGHE3NFAM  Non-Families with Persons < 18
+   300  HHDE3NFM   Non-Family Households
+   301  VPHE3O0    Owner hh no vehicle available
+   302  VPHE3O1    Owner hh 1 vehicle available
+   303  VPHE3O2    Owner hh 2 vehicles available
+   304  VPHE3O3    Owner hh 3 vehicles available
+   305  VPHE3O4    Owner hh 4 vehicles available
+   306  VPHE3O5    Owner hh 5+ vehicles available
+   307  VAVE3OTOT  Agg vehicles available owner hshlds
+   308  VPHE3R0    Renter hh no vehicle available
+   309  VPHE3R1    Renter hh 1 vehicle available
+   310  VPHE3R2    Renter hh 2 vehicles available
+   311  VPHE3R3    Renter hh 3 vehicles available
+   312  VPHE3R4    Renter hh 4 vehicles available
+   313  VPHE3R5    Renter hh 5+ vehicles available
+   314  VAVE3RTOT  Agg vehicles available renter hshlds
+   315  VPHE3NONE  Households: No Vehicle Available
+   316  VPHE31     Households: One Vehicle Available
+   317  VPHE32     Households: Two Vehicles Available
+   318  VPHE33     Households: Three Vehicles Available
+   319  VPHE34     Households: Four Vehicles Available
+   320  VPHE35     Households: Five+ Vehicles Available
+   321  VPHE3AVE   Households: Average Vehicles Available
+   322  HHDE3      Households
+   323  HHDE3DENS  Household Density (Per Square Mile)
+   324  DWLE3VACNT Housing units vacant
+   325  DWLE3RENT  Occupied units renter
+   326  DWLE3      Housing units
+   327  AGGX3WAGE  Aggregate wage or salary income in the past 12 months
+   328  AGGX3SELF  Aggregate self-employment income in the past 12 months
+   329  AGGX3INT   Aggregate interest, dividends, or net rental income in the past 12 months
+   330  AGGX3SOCSE Aggregate Social Security income in the past 12 months
+   331  AGGX3SUPSE Aggregate Supplemental Security Income (SSI) in the past 12 months
+   332  AGGX3PUB   Aggregate public assistance income in the past 12 months
+   333  AGGX3RET   Aggregate retirement income in the past 12 months
+   334  AGGX3OTH   Aggregate other types of income in the past 12 months
+   335  INCE3AGG   Aggegrate Income
+   336  INCE3AGGHD Aggregate Household Income
+   337  INCE3AGGFA Aggregate Family Household Income
+   338  INCE3AGGNF Aggregate Non-Family Household Income
+   339  INCE3AGGGP Aggregate Group Quarters Income
+   340  INCE3PCAP  Per capita income
+   341  INCE3AVEHH Average household Income
+   342  INCE3AVEFA Average family income
+   343  INCE3AVENF Average Non-Family Income
+   344  INCE3MEDHH Median household income
+   345  INCE3MEDFA Median family income
+   346  INCE3MEDNF Median Non-Family Income
+   347  INCE3DENS  Income Density ($000 Per Square Mile)
+   348  INCE3INEQ  Income Inequality Coefficient
+   349  FIXE3LT05  Families income <$5000
+   350  FIXE30510  Families income $5000-9999
+   351  FIXE31015  Families income $10000-14999
+   352  FIXE31520  Families income $15000-19999
+   353  FIXE32025  Families income $20000-24999
+   354  FIXE32530  Families income $25000-29999
+   355  FIXE33035  Families income $30000-34999
+   356  FIXE33540  Families income $35000-39999
+   357  FIXE34045  Families income $40000-44999
+   358  FIXE34550  Families income $45000-49999
+   359  FIXE35055  Families income $50000-54999
+   360  FIXE35560  Families income $55000-59999
+   361  FIXE36065  Families income $60000-64999
+   362  FIXE36570  Families income $65000-69999
+   363  FIXE37075  Families income $70000-74999
+   364  FIXE37580  Families income $75000-79999
+   365  FIXE38085  Families income $80000-84999
+   366  FIXE38590  Families income $85000-89999
+   367  FIXE39095  Families income $90000-94999
+   368  FIXE395100 Families income $95000-99999
+   369  FIXE310025 Families income $100000-124999
+   370  FIXE312550 Families income $125000-149999
+   371  FIXE315020 Families income $150000-199999
+   372  FIXE320050 Families income $200000-249999
+   373  FIXE325050 Families income $250000-499999
+   374  FIXE3GT500 Families income $500000+
+   375  FINE3LT10  Family Household Income < $10000
+   376  FINE31015  Family Household Income $10000-$14999
+   377  FINE31520  Family Household Income $15000-$19999
+   378  FINE32025  Family Household Income $20000-$24999
+   379  FINE32530  Family Household Income $25000-$29999
+   380  FINE33035  Family Household Income $30000-$34999
+   381  FINE33540  Family Household Income $35000-$39999
+   382  FINE34045  Family Household Income $40000-$44999
+   383  FINE34550  Family Household Income $45000-$49999
+   384  FINE35060  Family Household Income $50000-$59999
+   385  FINE36075  Family Household Income $60000-$74999
+   386  FINE375100 Family Household Income $75000-$99999
+   387  FINE310025 Family Household Income $100000-$124999
+   388  FINE312550 Family Household Income $125000-$149999
+   389  FINE315020 Family Household Income $150000-$199999
+   390  FINE3GT200 Family Household Income > $200000
+   391  HIXE3LT05  Hshlds income <$5000
+   392  HIXE30510  Hshlds income $5000-9999
+   393  HIXE31015  Hshlds income $10000-14999
+   394  HIXE31520  Hshlds income $15000-19999
+   395  HIXE32025  Hshlds income $20000-24999
+   396  HIXE32530  Hshlds income $25000-29999
+   397  HIXE33035  Hshlds income $30000-34999
+   398  HIXE33540  Hshlds income $35000-39999
+   399  HIXE34045  Hshlds income $40000-44999
+   400  HIXE34550  Hshlds income $45000-49999
+   401  HIXE35055  Hshlds income $50000-54999
+   402  HIXE35560  Hshlds income $55000-59999
+   403  HIXE36065  Hshlds income $60000-64999
+   404  HIXE36570  Hshlds income $65000-69999
+   405  HIXE37075  Hshlds income $70000-74999
+   406  HIXE37580  Hshlds income $75000-79999
+   407  HIXE38085  Hshlds income $80000-84999
+   408  HIXE38590  Hshlds income $85000-89999
+   409  HIXE39095  Hshlds income $90000-94999
+   410  HIXE395100 Hshlds income $95000-99999
+   411  HIXE310025 Hshlds income $100000-124999
+   412  HIXE312550 Hshlds income $125000-149999
+   413  HIXE315020 Hshlds income $150000-199999
+   414  HIXE320050 Hshlds income $200000-249999
+   415  HIXE325050 Hshlds income $250000-499999
+   416  HIXE3GT500 Hshlds income $500000+
+   417  HINE3LT10  Household Income < $10000
+   418  HINE31015  Household Income $10000-$14999
+   419  HINE31520  Household Income $15000-$19999
+   420  HINE32025  Household Income $20000-$24999
+   421  HINE32530  Household Income $25000-$29999
+   422  HINE33035  Household Income $30000-$34999
+   423  HINE33540  Household Income $35000-$39999
+   424  HINE34045  Household Income $40000-$44999
+   425  HINE34550  Household Income $45000-$49999
+   426  HINE35060  Household Income $50000-$59999
+   427  HINE36075  Household Income $60000-$74999
+   428  HINE375100 Household Income $75000-$99999
+   429  HINE310025 Household Income $100000-$124999
+   430  HINE312550 Household Income $125000-$149999
+   431  HINE315020 Household Income $150000-$199999
+   432  HINE3GT200 Household Income > $200000
+   433  NIXE3LT05  Nonfamilies income <$5000
+   434  NIXE30510  Nonfamilies income $5000-9999
+   435  NIXE31015  Nonfamilies income $10000-14999
+   436  NIXE31520  Nonfamilies income $15000-19999
+   437  NIXE32025  Nonfamilies income $20000-24999
+   438  NIXE32530  Nonfamilies income $25000-29999
+   439  NIXE33035  Nonfamilies income $30000-34999
+   440  NIXE33540  Nonfamilies income $35000-39999
+   441  NIXE34045  Nonfamilies income $40000-44999
+   442  NIXE34550  Nonfamilies income $45000-49999
+   443  NIXE35055  Nonfamilies income $50000-54999
+   444  NIXE35560  Nonfamilies income $55000-59999
+   445  NIXE36065  Nonfamilies income $60000-64999
+   446  NIXE36570  Nonfamilies income $65000-69999
+   447  NIXE37075  Nonfamilies income $70000-74999
+   448  NIXE37580  Nonfamilies income $75000-79999
+   449  NIXE38085  Nonfamilies income $80000-84999
+   450  NIXE38590  Nonfamilies income $85000-89999
+   451  NIXE39095  Nonfamilies income $90000-94999
+   452  NIXE395100 Nonfamilies income $95000-99999
+   453  NIXE310025 Nonfamilies income $100000-124999
+   454  NIXE312550 Nonfamilies income $125000-149999
+   455  NIXE315020 Nonfamilies income $150000-199999
+   456  NIXE320050 Nonfamilies income $200000-249999
+   457  NIXE325050 Nonfamilies income $250000-499999
+   458  NIXE3GT500 Nonfamilies income $500000+
+   459  NINE3LT10  Non-Family Household Income < $10000
+   460  NINE31015  Non-Family Household Income $10000-$14999
+   461  NINE31520  Non-Family Household Income $15000-$19999
+   462  NINE32025  Non-Family Household Income $20000-$24999
+   463  NINE32530  Non-Family Household Income $25000-$29999
+   464  NINE33035  Non-Family Household Income $30000-$34999
+   465  NINE33540  Non-Family Household Income $35000-$39999
+   466  NINE34045  Non-Family Household Income $40000-$44999
+   467  NINE34550  Non-Family Household Income $45000-$49999
+   468  NINE35060  Non-Family Household Income $50000-$59999
+   469  NINE36075  Non-Family Household Income $60000-$74999
+   470  NINE375100 Non-Family Household Income $75000-$99999
+   471  NINE310025 Non-Family Household Income $100000-$124999
+   472  NINE312550 Non-Family Household Income $125000-$149999
+   473  NINE315020 Non-Family Household Income $150000-$199999
+   474  NINE3GT200 Non-Family Household Income > $200000
+   475  CLWX3FPRV  Empl Females, Employee of private company wrkrs
+   476  CLWX3FSLF  Empl Females, Self-Empl in own incorporated business wrkrs
+   477  CLWX3FNPF  Empl Females, Private not-for-profit wage and salary wrkrs
+   478  CLWX3FLGV  Empl Females, Local government wrkrs
+   479  CLWX3FSGV  Empl Females, State government wrkrs
+   480  CLWX3FFGV  Empl Females, Federal government wrkrs
+   481  CLWX3FSLFX Empl Females, Self-Empl in own not incorporated business wrkrs
+   482  CLWX3FUNP  Empl Females, Unpaid family wrkrs
+   483  CLWX3MPRV  Empl Males, Employee of private company wrkrs
+   484  CLWX3MSLF  Empl Males, Self-Empl in own incorporated business wrkrs
+   485  CLWX3MNPF  Empl Males, Private not-for-profit wage and salary wrkrs
+   486  CLWX3MLGV  Empl Males, Local government wrkrs
+   487  CLWX3MSGV  Empl Males, State government wrkrs
+   488  CLWX3MFGV  Empl Males, Federal government wrkrs
+   489  CLWX3MSLFX Empl Males, Self-Empl in own not incorporated business wrkrs
+   490  CLWX3MUNP  Empl Males, Unpaid family wrkrs
+   491  CLWX3PRV   Class of Worker:  Employee of private company wrkrs
+   492  CLWX3SLF   Class of Worker:  Self-Empl in own incorporated business wrkrs
+   493  CLWX3NPF   Class of Worker:  Private not-for-profit wage and salary wrkrs
+   494  CLWX3LGV   Class of Worker:  Local government wrkrs
+   495  CLWX3SGV   Class of Worker:  State government wrkrs
+   496  CLWX3FGV   Class of Worker:  Federal government wrkrs
+   497  CLWX3SLFX  Class of Worker:  Self-Empl in own not incorporated business wrkrs
+   498  CLWX3UNP   Class of Worker:  Unpaid family wrkrs
+   499  LBFE3FARM  Pop female 16+ in Armed Forces
+   500  LBFE3FEMPL Pop female 16+ civilian employed
+   501  LBFE3FUNEM Pop female 16+ civilian unemployed
+   502  LBFE3FNLF  Pop female 16+ not in labor force
+   503  LBFE3MARM  Pop male 16+ in Armed Forces
+   504  LBFE3MEMPL Pop male 16+ civilian employed
+   505  LBFE3MUNEM Pop male 16+ civilian unemployed
+   506  LBFE3MNLF  Pop male 16+ not in labor force
+   507  OCCX3FMGMT Occ By Sex Female: Management occupations
+   508  OCCX3FBUSF Occ By Sex Female: Business and financial operations occupations
+   509  OCCX3FCOMP Occ By Sex Female: Computer and mathematical occupations
+   510  OCCX3FARCH Occ By Sex Female: Architecture and engineering occupations
+   511  OCCX3FSCI  Occ By Sex Female: Life, physical, and social science occupations
+   512  OCCX3FCOMM Occ By Sex Female: Community and social service occupations
+   513  OCCX3FLEG  Occ By Sex Female: Legal occupations
+   514  OCCX3FEDUC Occ By Sex Female: Education, training, and library occupations
+   515  OCCX3FARTS Occ By Sex Female: Arts, design, entertainment, sports, and media occupations
+   516  OCCX3FHLT1 Occ By Sex Female: Health diagnosing and treating practitioners and other technical occupations
+   517  OCCX3FHLT2 Occ By Sex Female: Health technologists and technicians
+   518  OCCX3FHLT3 Occ By Sex Female: Healthcare support occupations
+   519  OCCX3FFIRE Occ By Sex Female: Fire fighting and prevention, and other protective service workers including supervisors
+   520  OCCX3FCOPS Occ By Sex Female: Law enforcement workers including supervisors
+   521  OCCX3FFPRP Occ By Sex Female: Food preparation and serving related occupations
+   522  OCCX3FCLNG Occ By Sex Female: Building and grounds cleaning and maintenance occupations
+   523  OCCX3FPCAR Occ By Sex Female: Personal care and service occupations
+   524  OCCX3FSALE Occ By Sex Female: Sales and related occupations
+   525  OCCX3FOFF  Occ By Sex Female: Office and administrative support occupations
+   526  OCCX3FFARM Occ By Sex Female: Farming, fishing, and forestry occupations
+   527  OCCX3FCNEX Occ By Sex Female: Construction and extraction occupations
+   528  OCCX3FINST Occ By Sex Female: Installation, maintenance, and repair occupations
+   529  OCCX3FPROD Occ By Sex Female: Production occupations
+   530  OCCX3FTRAN Occ By Sex Female: Transportation occupations
+   531  OCCX3FMATM Occ By Sex Female: Material moving occupations
+   532  OCCX3MMGMT Occ By Sex Male: Management occupations
+   533  OCCX3MBUSF Occ By Sex Male: Business and financial operations occupations
+   534  OCCX3MCOMP Occ By Sex Male: Computer and mathematical occupations
+   535  OCCX3MARCH Occ By Sex Male: Architecture and engineering occupations
+   536  OCCX3MSCI  Occ By Sex Male: Life, physical, and social science occupations
+   537  OCCX3MCOMM Occ By Sex Male: Community and social service occupations
+   538  OCCX3MLEG  Occ By Sex Male: Legal occupations
+   539  OCCX3MEDUC Occ By Sex Male: Education, training, and library occupations
+   540  OCCX3MARTS Occ By Sex Male: Arts, design, entertainment, sports, and media occupations
+   541  OCCX3MHLT1 Occ By Sex Male: Health diagnosing and treating practitioners and other technical occupations
+   542  OCCX3MHLT2 Occ By Sex Male: Health technologists and technicians
+   543  OCCX3MHLT3 Occ By Sex Male: Healthcare support occupations
+   544  OCCX3MFIRE Occ By Sex Male: Fire fighting and prevention, and other protective service workers including supervisors
+   545  OCCX3MCOPS Occ By Sex Male: Law enforcement workers including supervisors
+   546  OCCX3MFPRP Occ By Sex Male: Food preparation and serving related occupations
+   547  OCCX3MCLNG Occ By Sex Male: Building and grounds cleaning and maintenance occupations
+   548  OCCX3MPCAR Occ By Sex Male: Personal care and service occupations
+   549  OCCX3MSALE Occ By Sex Male: Sales and related occupations
+   550  OCCX3MOFF  Occ By Sex Male: Office and administrative support occupations
+   551  OCCX3MFARM Occ By Sex Male: Farming, fishing, and forestry occupations
+   552  OCCX3MCNEX Occ By Sex Male: Construction and extraction occupations
+   553  OCCX3MINST Occ By Sex Male: Installation, maintenance, and repair occupations
+   554  OCCX3MPROD Occ By Sex Male: Production occupations
+   555  OCCX3MTRAN Occ By Sex Male: Transportation occupations
+   556  OCCX3MMATM Occ By Sex Male: Material moving occupations
+   557  OCCX3MGMT  Occupation: Management occupations
+   558  OCCX3BUSF  Occupation: Business and financial operations occupations
+   559  OCCX3COMP  Occupation: Computer and mathematical occupations
+   560  OCCX3ARCH  Occupation: Architecture and engineering occupations
+   561  OCCX3SCI   Occupation: Life, physical, and social science occupations
+   562  OCCX3COMM  Occupation: Community and social service occupations
+   563  OCCX3LEG   Occupation: Legal occupations
+   564  OCCX3EDUC  Occupation: Education, training, and library occupations
+   565  OCCX3ARTS  Occupation: Arts, design, entertainment, sports, and media occupations
+   566  OCCX3HLT1  Occupation: Health diagnosing and treating practitioners and other technical occupations
+   567  OCCX3HLT2  Occupation: Health technologists and technicians
+   568  OCCX3HLT3  Occupation: Healthcare support occupations
+   569  OCCX3FIRE  Occupation: Fire fighting and prevention, and other protective service workers including supervisors
+   570  OCCX3COPS  Occupation: Law enforcement workers including supervisors
+   571  OCCX3FPRP  Occupation: Food preparation and serving related occupations
+   572  OCCX3CLNG  Occupation: Building and grounds cleaning and maintenance occupations
+   573  OCCX3PCAR  Occupation: Personal care and service occupations
+   574  OCCX3SALE  Occupation: Sales and related occupations
+   575  OCCX3OFF   Occupation: Office and administrative support occupations
+   576  OCCX3FARM  Occupation: Farming, fishing, and forestry occupations
+   577  OCCX3CNEX  Occupation: Construction and extraction occupations
+   578  OCCX3INST  Occupation: Installation, maintenance, and repair occupations
+   579  OCCX3PROD  Occupation: Production occupations
+   580  OCCX3TRAN  Occupation: Transportation occupations
+   581  OCCX3MATM  Occupation: Material moving occupations
+   582  OCCX3WHTCL White Collar Employees
+   583  OCCX3BLUCL Blue Collar Employees
+   584  INDX3AGRI  Industry: Agriculture, forestry, fishing and hunting
+   585  INDX3MINE  Industry: Mining, quarrying, and oil and gas extraction
+   586  INDX3CONS  Industry: Construction
+   587  INDX3MMFG  Industry: Manufacturing
+   588  INDX3WTRA  Industry: Wholesale trade
+   589  INDX3RTRA  Industry: Retail trade
+   590  INDX3TRAN  Industry: Transportation and warehousing
+   591  INDX3UTIL  Industry: Utilities
+   592  INDX3INFO  Industry: Information
+   593  INDX3FIN   Industry: Finance and insurance
+   594  INDX3REAL  Industry: Real estate and rental and leasing
+   595  INDX3PSRV  Industry: Professional, scientific, and technical services
+   596  INDX3MGMT  Industry: Management of companies and enterprises
+   597  INDX3ADS   Industry: Administrative and support and waste management services
+   598  INDX3EDUC  Industry: Educational services
+   599  INDX3HLTH  Industry: Health care and social assistance
+   600  INDX3ARTS  Industry: Arts, entertainment, and recreation
+   601  INDX3FOOD  Industry: Accommodation and food services
+   602  INDX3OTHR  Industry: Other services, except public administration
+   603  INDX3PUBA  Industry: Public administration
+   604  INDX3FAGRI Ind By Sex Female: Agriculture, forestry, fishing and hunting
+   605  INDX3FMINE Ind By Sex Female: Mining, quarrying, and oil and gas extraction
+   606  INDX3FCONS Ind By Sex Female: Construction
+   607  INDX3FMMFG Ind By Sex Female: Manufacturing
+   608  INDX3FWTRA Ind By Sex Female: Wholesale trade
+   609  INDX3FRTRA Ind By Sex Female: Retail trade
+   610  INDX3FTRAN Ind By Sex Female: Transportation and warehousing
+   611  INDX3FUTIL Ind By Sex Female: Utilities
+   612  INDX3FINFO Ind By Sex Female: Information
+   613  INDX3FFIN  Ind By Sex Female: Finance and insurance
+   614  INDX3FREAL Ind By Sex Female: Real estate and rental and leasing
+   615  INDX3FPSRV Ind By Sex Female: Professional, scientific, and technical services
+   616  INDX3FMGMT Ind By Sex Female: Management of companies and enterprises
+   617  INDX3FADS  Ind By Sex Female: Administrative and support and waste management services
+   618  INDX3FEDUC Ind By Sex Female: Educational services
+   619  INDX3FHLTH Ind By Sex Female: Health care and social assistance
+   620  INDX3FARTS Ind By Sex Female: Arts, entertainment, and recreation
+   621  INDX3FFOOD Ind By Sex Female: Accommodation and food services
+   622  INDX3FOTHR Ind By Sex Female: Other services, except public administration
+   623  INDX3FPUBA Ind By Sex Female: Public administration
+   624  INDX3MAGRI Ind By Sex Male: Agriculture, forestry, fishing and hunting
+   625  INDX3MMINE Ind By Sex Male: Mining, quarrying, and oil and gas extraction
+   626  INDX3MCONS Ind By Sex Male: Construction
+   627  INDX3MMMFG Ind By Sex Male: Manufacturing
+   628  INDX3MWTRA Ind By Sex Male: Wholesale trade
+   629  INDX3MRTRA Ind By Sex Male: Retail trade
+   630  INDX3MTRAN Ind By Sex Male: Transportation and warehousing
+   631  INDX3MUTIL Ind By Sex Male: Utilities
+   632  INDX3MINFO Ind By Sex Male: Information
+   633  INDX3MFIN  Ind By Sex Male: Finance and insurance
+   634  INDX3MREAL Ind By Sex Male: Real estate and rental and leasing
+   635  INDX3MPSRV Ind By Sex Male: Professional, scientific, and technical services
+   636  INDX3MMGMT Ind By Sex Male: Management of companies and enterprises
+   637  INDX3MADS  Ind By Sex Male: Administrative and support and waste management services
+   638  INDX3MEDUC Ind By Sex Male: Educational services
+   639  INDX3MHLTH Ind By Sex Male: Health care and social assistance
+   640  INDX3MARTS Ind By Sex Male: Arts, entertainment, and recreation
+   641  INDX3MFOOD Ind By Sex Male: Accommodation and food services
+   642  INDX3MOTHR Ind By Sex Male: Other services, except public administration
+   643  INDX3MPUBA Ind By Sex Male: Public administration
+   644  TLWX3T01   Time Leaving for Work: 12:00 a.m. to 4:59 a.m.
+   645  TLWX3T02   Time Leaving for Work: 5:00 a.m. to 5:29 a.m.
+   646  TLWX3T03   Time Leaving for Work: 5:30 a.m. to 5:59 a.m.
+   647  TLWX3T04   Time Leaving for Work: 6:00 a.m. to 6:29 a.m.
+   648  TLWX3T05   Time Leaving for Work: 6:30 a.m. to 6:59 a.m.
+   649  TLWX3T06   Time Leaving for Work: 7:00 a.m. to 7:29 a.m.
+   650  TLWX3T07   Time Leaving for Work: 7:30 a.m. to 7:59 a.m.
+   651  TLWX3T08   Time Leaving for Work: 8:00 a.m. to 8:29 a.m.
+   652  TLWX3T09   Time Leaving for Work: 8:30 a.m. to 8:59 a.m.
+   653  TLWX3T10   Time Leaving for Work: 9:00 a.m. to 9:59 a.m.
+   654  TLWX3T11   Time Leaving for Work: 10:00 a.m. to 10:59 a.m.
+   655  TLWX3T12   Time Leaving for Work: 11:00 a.m. to 11:59 a.m.
+   656  TLWX3T13   Time Leaving for Work: 12:00 p.m. to 3:59 p.m.
+   657  TLWX3T14   Time Leaving for Work: 4:00 p.m. to 11:59 p.m.
+   658  TRWX3DRV1  Means of Transportation to Work: Drove alone
+   659  TRWX3CPOL2 Means of Transportation to Work: In 2-person carpool
+   660  TRWX3CPOL3 Means of Transportation to Work: In 3-person carpool
+   661  TRWX3CPOL4 Means of Transportation to Work: In 4-person carpool
+   662  TRWX3CPOL5 Means of Transportation to Work: In 5-or-6-person carpool
+   663  TRWX3CPOL7 Means of Transportation to Work: In 7-or-more-person carpool
+   664  TRWX3BUS   Means of Transportation to Work: Bus or trolley bus
+   665  TRWX3STCAR Means of Transportation to Work: Streetcar or trolley car
+   666  TRWX3SUB   Means of Transportation to Work: Subway or elevated
+   667  TRWX3RAIL  Means of Transportation to Work: Railroad
+   668  TRWX3FERRY Means of Transportation to Work: Ferryboat
+   669  TRWX3TAXI  Means of Transportation to Work: Taxicab
+   670  TRWX3MOTOR Means of Transportation to Work: Motorcycle
+   671  TRWX3BICYC Means of Transportation to Work: Bicycle
+   672  TRWX3WALK  Means of Transportation to Work: Walked
+   673  TRWX3OTHR  Means of Transportation to Work: Other means
+   674  TRWX3HOME  Means of Transportation to Work: Worked at home
+   675  TVWX3LT5   Travel Time to Work: Less than 5 minutes
+   676  TVWX30509  Travel Time to Work: 5 to 9 minutes
+   677  TVWX31014  Travel Time to Work: 10 to 14 minutes
+   678  TVWX31519  Travel Time to Work: 15 to 19 minutes
+   679  TVWX32024  Travel Time to Work: 20 to 24 minutes
+   680  TVWX32529  Travel Time to Work: 25 to 29 minutes
+   681  TVWX33034  Travel Time to Work: 30 to 34 minutes
+   682  TVWX33539  Travel Time to Work: 35 to 39 minutes
+   683  TVWX34044  Travel Time to Work: 40 to 44 minutes
+   684  TVWX34559  Travel Time to Work: 45 to 59 minutes
+   685  TVWX36089  Travel Time to Work: 60 to 89 minutes
+   686  TVWX3GT90  Travel Time to Work: 90 or more minutes
+   687  TVWX3MED   Median Travel Time to Work
+   688  LBFE3ARM   Pop 16+ in Armed Forces
+   689  LBFE3EMPL  Pop 16+ civilian employed
+   690  LBFE3UNEM  Pop 16+ civilian unemployed
+   691  LBFE3NLF   Pop 16+ not in labor force
+   692  UNEE3RATE  Unemployment Rate
+   693  LBFE3LBF   Population In Labor Force
+   694  LBFE3MALE  Civilian Labor Force: Male
+   695  LBFE3FEM   Civilian Labor Force: Female
+   696  AGRE3WNH   Population Age <18 White not hispanic
+   697  AGRE3BLACK Population Age <18 Black
+   698  AGRE3ASIAN Population Age <18 Asian
+   699  AGRE3OMNH  Population Age <18 Other not Hispanic
+   700  AGRE3HISP  Population Age <18 Hispanic
+   701  AGEE3F0004 Pop female < 5 yrs
+   702  AGEE3F0509 Pop female 5-9 yrs
+   703  AGEE3F1014 Pop female 10-14 yrs
+   704  AGEE3F1519 Pop female 15-19 yrs
+   705  AGEE3F2024 Pop female 20-24 yrs
+   706  AGEE3F2529 Pop female 25-29 yrs
+   707  AGEE3F3034 Pop female 30-34 yrs
+   708  AGEE3F3539 Pop female 35-39 yrs
+   709  AGEE3F4044 Pop female 40-44 yrs
+   710  AGEE3F4549 Pop female 45-49 yrs
+   711  AGEE3F5054 Pop female 50-54 yrs
+   712  AGEE3F5559 Pop female 55-59 yrs
+   713  AGEE3F6064 Pop female 60-64 yrs
+   714  AGEE3F6569 Pop female 65-69 yrs
+   715  AGEE3F7074 Pop female 70-74 yrs
+   716  AGEE3F7579 Pop female 75-79 yrs
+   717  AGEE3F8084 Pop female 80-84 yrs
+   718  AGEE3FGT85 Pop female 85+ yrs
+   719  AGEE3M0004 Pop male < 5 yrs
+   720  AGEE3M0509 Pop male 5-9 yrs
+   721  AGEE3M1014 Pop male 10-14 yrs
+   722  AGEE3M1519 Pop male 15-19 yrs
+   723  AGEE3M2024 Pop male 20-24 yrs
+   724  AGEE3M2529 Pop male 25-29 yrs
+   725  AGEE3M3034 Pop male 30-34 yrs
+   726  AGEE3M3539 Pop male 35-39 yrs
+   727  AGEE3M4044 Pop male 40-44 yrs
+   728  AGEE3M4549 Pop male 45-49 yrs
+   729  AGEE3M5054 Pop male 50-54 yrs
+   730  AGEE3M5559 Pop male 55-59 yrs
+   731  AGEE3M6064 Pop male 60-64 yrs
+   732  AGEE3M6569 Pop male 65-69 yrs
+   733  AGEE3M7074 Pop male 70-74 yrs
+   734  AGEE3M7579 Pop male 75-79 yrs
+   735  AGEE3M8084 Pop male 80-84 yrs
+   736  AGEE3MGT85 Pop male 85+ yrs
+   737  AGEE30004  Population age 0-4
+   738  AGEE30509  Population age 5-9
+   739  AGEE31014  Population age 10-14
+   740  AGEE31519  Population age 15-19
+   741  AGEE32024  Population age 20-24
+   742  AGEE32529  Population age 25-29
+   743  AGEE33034  Population age 30-34
+   744  AGEE33539  Population age 35-39
+   745  AGEE34044  Population age 40-44
+   746  AGEE34549  Population age 45-49
+   747  AGEE35054  Population age 50-54
+   748  AGEE35559  Population age 55-59
+   749  AGEE36064  Population age 60-64
+   750  AGEE36569  Population age 65-69
+   751  AGEE37074  Population age 70-74
+   752  AGEE37579  Population age 75-79
+   753  AGEE38084  Population age 80-84
+   754  AGEE3GT85  Population age 85+
+   755  ANX23NC1A  Population with Single Ancestry Specified
+   756  ANX23NC2A  Population with Multiple Ancestry Specified
+   757  ANX23NCNS  Population with Ancestry Unclassified or Not Reported
+   758  ANX23T001  Afghan
+   759  ANX23T002  Albanian
+   760  ANX23T003  Alsatian
+   761  ANX23T004  American
+   762  ANX23T005  Arab: Egyptian
+   763  ANX23T006  Arab: Iraqi
+   764  ANX23T007  Arab: Jordanian
+   765  ANX23T008  Arab: Lebanese
+   766  ANX23T009  Arab: Moroccan
+   767  ANX23T010  Arab: Palestinian
+   768  ANX23T011  Arab: Syrian
+   769  ANX23T012  Arab
+   770  ANX23T013  Other Arab
+   771  ANX23T014  Armenian
+   772  ANX23T015  Assyrian/Chaldean/Syriac
+   773  ANX23T016  Australian
+   774  ANX23T017  Austrian
+   775  ANX23T018  Basque
+   776  ANX23T019  Belgian
+   777  ANX23T020  Brazilian
+   778  ANX23T021  British
+   779  ANX23T022  Bulgarian
+   780  ANX23T023  Cajun
+   781  ANX23T024  Canadian
+   782  ANX23T025  Carpatho Rusyn
+   783  ANX23T026  Celtic
+   784  ANX23T027  Croatian
+   785  ANX23T028  Cypriot
+   786  ANX23T029  Czech
+   787  ANX23T030  Czechoslovakian
+   788  ANX23T031  Danish
+   789  ANX23T032  Dutch
+   790  ANX23T033  Eastern European
+   791  ANX23T034  English
+   792  ANX23T035  Estonian
+   793  ANX23T036  European
+   794  ANX23T037  Finnish
+   795  ANX23T038  French (except Basque)
+   796  ANX23T039  French Canadian
+   797  ANX23T040  German
+   798  ANX23T041  German Russian
+   799  ANX23T042  Greek
+   800  ANX23T043  Guyanese
+   801  ANX23T044  Hungarian
+   802  ANX23T045  Icelander
+   803  ANX23T046  Iranian
+   804  ANX23T047  Irish
+   805  ANX23T048  Israeli
+   806  ANX23T049  Italian
+   807  ANX23T050  Latvian
+   808  ANX23T051  Lithuanian
+   809  ANX23T052  Luxemburger
+   810  ANX23T053  Macedonian
+   811  ANX23T054  Maltese
+   812  ANX23T055  New Zealander
+   813  ANX23T056  Northern European
+   814  ANX23T057  Norwegian
+   815  ANX23T058  Pennsylvania German
+   816  ANX23T059  Polish
+   817  ANX23T060  Portuguese
+   818  ANX23T061  Romanian
+   819  ANX23T062  Russian
+   820  ANX23T063  Scandinavian
+   821  ANX23T064  Scotch-Irish
+   822  ANX23T065  Scottish
+   823  ANX23T066  Serbian
+   824  ANX23T067  Slavic
+   825  ANX23T068  Slovak
+   826  ANX23T069  Slovene
+   827  ANX23T070  Soviet Union
+   828  ANX23T071  Subsaharan African: Cape Verdean
+   829  ANX23T072  Subsaharan African: Ethiopian
+   830  ANX23T073  Subsaharan African: Ghanaian
+   831  ANX23T074  Subsaharan African: Kenyan
+   832  ANX23T075  Subsaharan African: Liberian
+   833  ANX23T076  Subsaharan African: Nigerian
+   834  ANX23T077  Subsaharan African: Senegalese
+   835  ANX23T078  Subsaharan African: Sierra Leonean
+   836  ANX23T079  Subsaharan African: Somali
+   837  ANX23T080  Subsaharan African: South African
+   838  ANX23T081  Subsaharan African: Sudanese
+   839  ANX23T082  Subsaharan African: Ugandan
+   840  ANX23T083  Subsaharan African: Zimbabwean
+   841  ANX23T084  African
+   842  ANX23T085  Other Subsaharan African
+   843  ANX23T086  Swedish
+   844  ANX23T087  Swiss
+   845  ANX23T088  Turkish
+   846  ANX23T089  Ukrainian
+   847  ANX23T090  Welsh
+   848  ANX23T091  West Indian: Bahamian
+   849  ANX23T092  West Indian: Barbadian
+   850  ANX23T093  West Indian: Belizean
+   851  ANX23T094  West Indian: Bermudan
+   852  ANX23T095  West Indian: British West Indian
+   853  ANX23T096  West Indian: Dutch West Indian
+   854  ANX23T097  West Indian: Haitian
+   855  ANX23T098  West Indian: Jamaican
+   856  ANX23T099  West Indian: Trinidadian and Tobagonian
+   857  ANX23T100  West Indian: U.S. Virgin Islander
+   858  ANX23T101  West Indian
+   859  ANX23T102  Other West Indian
+   860  ANX23T103  Yugoslavian
+   861  ANX23T104  Other groups
+   862  ANX23ICHK  Cherokee
+   863  ANX23ICHP  Chippewa
+   864  ANX23INAV  Navajo
+   865  ANX23ISIO  Sioux
+   866  ANX23ISPC  All specified other American Indian tribes
+   867  ANX23KNAT  Alaska Native tribes, specified
+   868  ANX23IOTH  American Indian or Alaska Native tribe, not specified
+   869  ANX23SIND  Asian Indian
+   870  ANX23NDSH  Bangladeshi
+   871  ANX23HUTN  Bhutanese
+   872  ANX23URMA  Burmese
+   873  ANX23MBDA  Cambodian
+   874  ANX23HINA  Chinese, except Taiwanese
+   875  ANX23ILIP  Filipino
+   876  ANX23MONG  Hmong
+   877  ANX23NDON  Indonesian
+   878  ANX23APAN  Japanese
+   879  ANX23OREA  Korean
+   880  ANX23AOS   Laotian
+   881  ANX23ALAY  Malaysian
+   882  ANX23ONG   Mongolian
+   883  ANX23EPAL  Nepalese
+   884  ANX23KINW  Okinawan
+   885  ANX23AKI   Pakistani
+   886  ANX23RILK  Sri Lankan
+   887  ANX23AIWN  Taiwanese
+   888  ANX23HAI   Thai
+   889  ANX23IET   Vietnamese
+   890  ANX23SOSP  Other Asian, specified
+   891  ANX23SOTH  Other Asian, not specified
+   892  ANX23STWO  Two or more Asian
+   893  ANX23AWAI  Native Hawaiian
+   894  ANX23AMOA  Samoan
+   895  ANX23HAM   Chamorro (Guamanian)
+   896  ANX23THPI  Other Pacific Islander
+   897  ANX23EXCN  Mexican
+   898  ANX23RICO  Puerto Rican
+   899  ANX23UBAN  Cuban
+   900  ANX23MNCN  Dominican (Dominican Republic)
+   901  ANX23OSTA  Costa Rican
+   902  ANX23UATM  Guatemalan
+   903  ANX23ONDU  Honduran
+   904  ANX23CRGA  Nicaraguan
+   905  ANX23ANAM  Panamanian
+   906  ANX23LVDN  Salvadoran
+   907  ANX23THCA  Other Central American
+   908  ANX23RGNT  Argentinean
+   909  ANX23OLIV  Bolivian
+   910  ANX23HILE  Chilean
+   911  ANX23LMBA  Colombian
+   912  ANX23CUAD  Ecuadorian
+   913  ANX23ARAG  Paraguayan
+   914  ANX23ERU   Peruvian
+   915  ANX23RUG   Uruguayan
+   916  ANX23ENEZ  Venezuelan
+   917  ANX23THSA  Other South American
+   918  ANX23PAIN  Spaniard
+   919  ANX23PNSH  Spanish
+   920  ANX23PNAM  Spanish American
+   921  ANX23HSOTH All other Hispanic or Latino
+   922  ANX23OT    Total Ancestry Specified
+   923  AGDE3FLT1  Female Population Age < 1 Year
+   924  AGDE3F1    Female Population Age 1
+   925  AGDE3F2    Female Population Age 2
+   926  AGDE3F3    Female Population Age 3
+   927  AGDE3F4    Female Population Age 4
+   928  AGDE3F5    Female Population Age 5
+   929  AGDE3F6    Female Population Age 6
+   930  AGDE3F7    Female Population Age 7
+   931  AGDE3F8    Female Population Age 8
+   932  AGDE3F9    Female Population Age 9
+   933  AGDE3F10   Female Population Age 10
+   934  AGDE3F11   Female Population Age 11
+   935  AGDE3F12   Female Population Age 12
+   936  AGDE3F13   Female Population Age 13
+   937  AGDE3F14   Female Population Age 14
+   938  AGDE3F15   Female Population Age 15
+   939  AGDE3F16   Female Population Age 16
+   940  AGDE3F17   Female Population Age 17
+   941  AGDE3F18   Female Population Age 18
+   942  AGDE3F19   Female Population Age 19
+   943  AGDE3F2024 Female Population Age 20-24
+   944  AGDE3F2529 Female Population Age 25-29
+   945  AGDE3F3034 Female Population Age 30-34
+   946  AGDE3F3539 Female Population Age 35-39
+   947  AGDE3F4044 Female Population Age 40-44
+   948  AGDE3F4549 Female Population Age 45-49
+   949  AGDE3F5054 Female Population Age 50-54
+   950  AGDE3F5559 Female Population Age 55-59
+   951  AGDE3F6064 Female Population Age 60-64
+   952  AGDE3F6569 Female Population Age 65-69
+   953  AGDE3F7074 Female Population Age 70-74
+   954  AGDE3F7579 Female Population Age 75-79
+   955  AGDE3F8084 Female Population Age 80-84
+   956  AGDE3FGT85 Female Population Age >85
+   957  AGDE3MLT1  Male Population Age < 1 Year
+   958  AGDE3M1    Male Population Age 1
+   959  AGDE3M2    Male Population Age 2
+   960  AGDE3M3    Male Population Age 3
+   961  AGDE3M4    Male Population Age 4
+   962  AGDE3M5    Male Population Age 5
+   963  AGDE3M6    Male Population Age 6
+   964  AGDE3M7    Male Population Age 7
+   965  AGDE3M8    Male Population Age 8
+   966  AGDE3M9    Male Population Age 9
+   967  AGDE3M10   Male Population Age 10
+   968  AGDE3M11   Male Population Age 11
+   969  AGDE3M12   Male Population Age 12
+   970  AGDE3M13   Male Population Age 13
+   971  AGDE3M14   Male Population Age 14
+   972  AGDE3M15   Male Population Age 15
+   973  AGDE3M16   Male Population Age 16
+   974  AGDE3M17   Male Population Age 17
+   975  AGDE3M18   Male Population Age 18
+   976  AGDE3M19   Male Population Age 19
+   977  AGDE3M2024 Male Population Age 20-24
+   978  AGDE3M2529 Male Population Age 25-29
+   979  AGDE3M3034 Male Population Age 30-34
+   980  AGDE3M3539 Male Population Age 35-39
+   981  AGDE3M4044 Male Population Age 40-44
+   982  AGDE3M4549 Male Population Age 45-49
+   983  AGDE3M5054 Male Population Age 50-54
+   984  AGDE3M5559 Male Population Age 55-59
+   985  AGDE3M6064 Male Population Age 60-64
+   986  AGDE3M6569 Male Population Age 65-69
+   987  AGDE3M7074 Male Population Age 70-74
+   988  AGDE3M7579 Male Population Age 75-79
+   989  AGDE3M8084 Male Population Age 80-84
+   990  AGDE3MGT85 Male Population Age >85
+   991  AGDE3LT1   Population Age < 1 Year
+   992  AGDE31     Population Age 1
+   993  AGDE32     Population Age 2
+   994  AGDE33     Population Age 3
+   995  AGDE34     Population Age 4
+   996  AGDE35     Population Age 5
+   997  AGDE36     Population Age 6
+   998  AGDE37     Population Age 7
+   999  AGDE38     Population Age 8
+  1000  AGDE39     Population Age 9
+  1001  AGDE310    Population Age 10
+  1002  AGDE311    Population Age 11
+  1003  AGDE312    Population Age 12
+  1004  AGDE313    Population Age 13
+  1005  AGDE314    Population Age 14
+  1006  AGDE315    Population Age 15
+  1007  AGDE316    Population Age 16
+  1008  AGDE317    Population Age 17
+  1009  AGDE318    Population Age 18
+  1010  AGDE319    Population Age 19
+  1011  AGDE32024  Population Age 20-24
+  1012  AGDE32529  Population Age 25-29
+  1013  AGDE33034  Population Age 30-34
+  1014  AGDE33539  Population Age 35-39
+  1015  AGDE34044  Population Age 40-44
+  1016  AGDE34549  Population Age 45-49
+  1017  AGDE35054  Population Age 50-54
+  1018  AGDE35559  Population Age 55-59
+  1019  AGDE36064  Population Age 60-64
+  1020  AGDE36569  Population Age 65-69
+  1021  AGDE37074  Population Age 70-74
+  1022  AGDE37579  Population Age 75-79
+  1023  AGDE38084  Population Age 80-84
+  1024  AGDE3GT85  Population Age >85
+  1025  EDUE3LTGR9 Pop 25+ less than 9th grade
+  1026  EDUE3SHSCH Pop 25+ 9th-12th grade no diploma
+  1027  EDUE3HSCH  Pop 25+ HS graduate
+  1028  EDUE3SCOLL Pop 25+ college no diploma
+  1029  EDUE3ASSOC Pop 25+ Associate degree
+  1030  EDUE3BACH  Pop 25+ Bachelor's degree
+  1031  EDUE3GRAD  Pop 25+ graduate or prof school degree
+  1032  GRPE3COLL  Group Quarters: College Housing
+  1033  GRPE3MIL   Group Quarters: Military Barracks
+  1034  GRPE3OTHN  Group Quarters: Other Non-Institutional
+  1035  POPE3GRPNI Non-Institutional Group Quarters Population
+  1036  POPE3GRPI  Institutional Group Quarters Population
+  1037  HISE3HISP  Population Hispanic
+  1038  HISE3NONH  Population Non-Hispanic
+  1039  POPE3FAM   Population in Family Households
+  1040  POPE3GRP   Population in Group Quarters
+  1041  POPE3NFM   Population in Non-Family Households
+  1042  LBFE3POP16 Population Age 16+
+  1043  MARE3NEVER Never Married
+  1044  MARE3MARR  Now Married
+  1045  MARE3SEP   Separated
+  1046  MARE3WIDOW Widowed
+  1047  MARE3DIVOR Divorced
+  1048  AGEE3GT25  Population Age 25+
+  1049  AGEE3GT15  Population Age 15+
+  1050  AGEE3MED   Median Age
+  1051  AGEE3MEDM  Median Age Males
+  1052  AGEE3MEDF  Median Age Females
+  1053  PANE3HHD   Panorama Household Base
+  1054  PANE3POP   Panorama Population Base
+  1055  PANE3ADULT Panorama Adult Population Base
+  1056  PANE3ADMAL Panorama Adult Male Base
+  1057  PANE3ADFEM Panorama Adult Female Base
+  1058  VETX3PS1   Period of Service Civ Vets 18+: Gulf War (9/2001 or later), no Gulf War (8/1990 to 8/2001)
+  1059  VETX3PS2   Period of Service Civ Vets 18+: Gulf War (9/2001 or later) and Gulf War (8/1990 to 8/2001)
+  1060  VETX3PS3   Period of Service Civ Vets 18+: Gulf War (9/2001 or later), and Gulf War (8/1990 to 8/2001)
+  1061  VETX3PS4   Period of Service Civ Vets 18+: Gulf War (8/1990 to 8/2001), no Vietnam Era
+  1062  VETX3PS5   Period of Service Civ Vets 18+: Gulf War (8/1990 to 8/2001) and Vietnam Era
+  1063  VETX3PS6   Period of Service Civ Vets 18+: Vietnam Era, no Korean War, no World War II
+  1064  VETX3PS7   Period of Service Civ Vets 18+: Vietnam Era and Korean War, no World War II
+  1065  VETX3PS8   Period of Service Civ Vets 18+: Vietnam Era and Korean War and World War II
+  1066  VETX3PS9   Period of Service Civ Vets 18+: Korean War, no Vietnam Era, no World War II
+  1067  VETX3PS10  Period of Service Civ Vets 18+: Korean War and World War II, no Vietnam Era
+  1068  VETX3PS11  Period of Service Civ Vets 18+: World War II, no Korean War, no Vietnam Era
+  1069  VETX3PS12  Period of Service Civ Vets 18+: Between Gulf War and Vietnam Era only
+  1070  VETX3PS13  Period of Service Civ Vets 18+: Between Vietnam Era and Korean War only
+  1071  VETX3PS14  Period of Service Civ Vets 18+: Between Korean War and World War II only
+  1072  VETX3PS15  Period of Service Civ Vets 18+: Pre-World War II only
+  1073  RACE3WHITE Population white
+  1074  RACE3BLACK Population black
+  1075  RACE3AMIND Population American Indian/Alaska Native
+  1076  RACE3ASIAN Population Asian
+  1077  RACE3HAWAI Population Hawaiian/Pacific Islander
+  1078  RACE3OTHER Population other race
+  1079  RACE3MULT  Population multirace
+  1080  RACE3DIVER Diversity
+  1081  RCHE3WHNHS Non Hispanic White
+  1082  RCHE3BLNHS Non Hispanic Black
+  1083  RCHE3AMNHS Non Hispanic American Indian
+  1084  RCHE3ASNHS Non Hispanic Asian
+  1085  RCHE3HANHS Non Hispanic Hawaiian/Pacific Islander
+  1086  RCHE3OTNHS Non Hispanic Other Race
+  1087  RCHE3MUNHS Non Hispanic Multiple Race
+  1088  RCHE3WHHIS Hispanic White
+  1089  RCHE3BLHIS Hispanic Black
+  1090  RCHE3AMHIS Hispanic American Indian
+  1091  RCHE3ASHIS Hispanic Asian
+  1092  RCHE3HAHIS Hispanic Hawaiian/Pacific Islander
+  1093  RCHE3OTHIS Hispanic Other Race
+  1094  RCHE3MUHIS Hispanic Multiple Race
+  1095  SCHX3FPPS  Females in (public) nursery school, preschool
+  1096  SCHX3FVPS  Females in (private) nursery school, preschool
+  1097  SCHX3FPK   Females in (public) kindergarten
+  1098  SCHX3FVK   Females in (private) kindergarten
+  1099  SCHX3FP1   Females in (public) grades 1-4
+  1100  SCHX3FV1   Females in (private) grades 1-4
+  1101  SCHX3FP5   Females in (public) grades 5-8
+  1102  SCHX3FV5   Females in (private) grades 5-8
+  1103  SCHX3FP9   Females in (public) grades 9-12
+  1104  SCHX3FV9   Females in (private) grades 9-12
+  1105  SCHX3FPCOL Females in (public) college (undergraduate)
+  1106  SCHX3FVCOL Females in (private) college (undergraduate) years
+  1107  SCHX3FPGRA Females in (public) graduate/professnl school
+  1108  SCHX3FVGRA Females in (private) gradaute/professnl school
+  1109  SCHX3FNISC Females 3+ not in school
+  1110  SCHX3FTOT  Females 3+
+  1111  SCHX3MPPS  Males in (public) nursery school, preschool
+  1112  SCHX3MVPS  Males in (private) nursery school, preschool
+  1113  SCHX3MPK   Males in (public) kindergarten
+  1114  SCHX3MVK   Males in (private) kindergarten
+  1115  SCHX3MP1   Males in (public) grades 1-4
+  1116  SCHX3MV1   Males in (private) grades 1-4
+  1117  SCHX3MP5   Males in (public) grades 5-8
+  1118  SCHX3MV5   Males in (private) grades 5-8
+  1119  SCHX3MP9   Males in (public) grades 9-12
+  1120  SCHX3MV9   Males in (private) grades 9-12
+  1121  SCHX3MPCOL Males in (public) college undergraduate years
+  1122  SCHX3MVCOL Males in (private) college undergraduate years
+  1123  SCHX3MPGRA Males in (public) grad or professional school
+  1124  SCHX3MVGRA Males in (private) grad or professional school
+  1125  SCHX3MNISC Males 3+ not in school
+  1126  SCHX3MTOT  Males 3+
+  1127  SEXE3MAL   Population male
+  1128  SEXE3FEM   Population female
+  1129  VSEX31VETF Veteran Status: Female: 18-34 years: Veteran
+  1130  VSEX31NVTF Veteran Status: Female: 18-34 years: Nonveteran
+  1131  VSEX32VETF Veteran Status: Female: 35-54 years: Veteran
+  1132  VSEX32NVTF Veteran Status: Female: 35-54 years: Nonveteran
+  1133  VSEX33VETF Veteran Status: Female: 55-64 years: Veteran
+  1134  VSEX33NVTF Veteran Status: Female: 55-64 years: Nonveteran
+  1135  VSEX34VETF Veteran Status: Female: 65-74 years: Veteran
+  1136  VSEX34NVTF Veteran Status: Female: 65-74 years: Nonveteran
+  1137  VSEX35VETF Veteran Status: Female: 75+ years: Veteran
+  1138  VSEX35NVTF Veteran Status: Female: 75+ years: Nonveteran
+  1139  VSEX3TOTF  Civilian Females 18+
+  1140  VSEX31VETM Veteran Status: Male: 18-34 years: Veteran
+  1141  VSEX31NVTM Veteran Status: Male: 18-34 years: Nonveteran
+  1142  VSEX32VETM Veteran Status: Male: 35-54 years: Veteran
+  1143  VSEX32NVTM Veteran Status: Male: 35-54 years: Nonveteran
+  1144  VSEX33VETM Veteran Status: Male: 55-64 years: Veteran
+  1145  VSEX33NVTM Veteran Status: Male: 55-64 years: Nonveteran
+  1146  VSEX34VETM Veteran Status: Male: 65-74 years: Veteran
+  1147  VSEX34NVTM Veteran Status: Male: 65-74 years: Nonveteran
+  1148  VSEX35VETM Veteran Status: Male: 75+ years: Veteran
+  1149  VSEX35NVTM Veteran Status: Male: 75+ years: Nonveteran
+  1150  VSEX3TOTM  Civilian Males 18+
+  1151  VETX3TOT   Civilian Veterans 18+
+  1152  POPE3      Population
+  1153  POPE3DENS  Population Density (Per Square Mile)
+  1154  HAGE3GT75  Householder Age 75+
+
+   113  HINE3MED24=MEDIAN(HINE3A2401:HINE3A2416)
+   114  HINE3MED25=MEDIAN(HINE3A2501:HINE3A2516)
+   115  HINE3MED35=MEDIAN(HINE3A3501:HINE3A3516)
+   116  HINE3MED45=MEDIAN(HINE3A4501:HINE3A4516)
+   117  HINE3MED55=MEDIAN(HINE3A5501:HINE3A5516)
+   118  HINE3MED65=MEDIAN(HINE3A6501:HINE3A6516)
+   119  HINE3MED75=MEDIAN(HINE3A7501:HINE3A7516)
+   120  HINE3M2544=JOINTMEDIAN(HINE3A2501:HINE3A2516,HINE3A3501:HINE3A3516)
+   121  HINE3M4564=JOINTMEDIAN(HINE3A4501:HINE3A4516,HINE3A5501:HINE3A5516)
+   122  HINE3MGT65=JOINTMEDIAN(HINE3A2501:HINE3A2516,HINE3A3501:HINE3A3516)
+   130  POVX3MED=MEDIAN(INCX3A:INCX3I)
+   131  POVX3UNDER=INCX3A+INCX3BC/POPE3%
+   157  RNTX3MED=MEDIAN(RNTX301:RNTX324)
+   158  DWLE3OCCUP=DWLE3-DWLE3VACNT
+   159  DWLE3OWNED=DWLE3-DWLE3VACNT-DWLE3RENT
+   180  HUSX31DET=HUSX3O1DET+HUSX3R1DET
+   181  HUSX31ATT=HUSX3O1ATT+HUSX3R1ATT
+   182  HUSX32=HUSX3O2+HUSX3R2
+   183  HUSX30304=HUSX3O0304+HUSX3R0304
+   184  HUSX30509=HUSX3O0509+HUSX3R0509
+   185  HUSX31019=HUSX3O1019+HUSX3R1019
+   186  HUSX32049=HUSX3O2049+HUSX3R2049
+   187  HUSX3GT50=HUSX3OGT50+HUSX3RGT50
+   188  HUSX3MOB=HUSX3OMOB+HUSX3RMOB
+   189  HUSX3BOAT=HUSX3OBOAT+HUSX3RBOAT
+   216  HOOX3MED=MEDIAN(HOOX3V01:HOOX3V26)
+   237  YBTX320UP=YBTX3O20UP+YBTX3R20UP
+   238  YBTX31019=YBTX3O1019+YBTX3R1019
+   239  YBTX30009=YBTX3O0009+YBTX3R0009
+   240  YBTX39099=YBTX3O9099+YBTX3R9099
+   241  YBTX38089=YBTX3O8089+YBTX3R8089
+   242  YBTX37079=YBTX3O7079+YBTX3R7079
+   243  YBTX36069=YBTX3O6069+YBTX3R6069
+   244  YBTX35059=YBTX3O5059+YBTX3R5059
+   245  YBTX34049=YBTX3O4049+YBTX3R4049
+   246  YBTX339PR=YBTX3O39PR+YBTX3R39PR
+   247  YBTX3MED=MEDIAN(YBTX320UP:YBTX339PR)
+   248  YBTX3MEDO=MEDIAN(YBTX3O20UP:YBTX3O39PR)
+   249  YBTX3MEDR=MEDIAN(YBTX3R20UP:YBTX3R39PR)
+   250  RACE3DOM=RACE(RC1E3W:RC1E3O)
+   275  LNIX3NENG=SUM(LNIX3SPNIS:LNIX3OTHN)
+   276  LNIX3ENGP=LNIX3SPNN+LNIX3IUEN+LNIX3ASNN+LNIX3OTHN
+   277  LNIX3ISOL=LNIX3SPNIS+LNIX3IEUIS+LNIX3ASNIS+LNIX3OTHIN
+   278  HHDE3MEDAG=MEDIAN(HAGE31524:HAGE3GT85)
+   293  HHDE3AVESZ=POPE3FAM+POPE3NFM/HHDE3
+   294  FAME3AVESZ=POPE3FAM/HHDE3FAM
+   295  NFME3AVESZ=POPE3NFM/HHDE3NFM
+   298  HHDE3NFM=HHDE3-HHDE3FAM
+   313  VPHE3NONE=VPHE3O0+VPHE3R0
+   314  VPHE31=VPHE3O1+VPHE3R1
+   315  VPHE32=VPHE3O2+VPHE3R2
+   316  VPHE33=VPHE3O3+VPHE3R3
+   317  VPHE34=VPHE3O4+VPHE3R4
+   318  VPHE35=VPHE3O5+VPHE3R5
+   319  VPHE3AVE=VAVE3OTOT+VAVE3RTOT/HHDE3
+   321  HHDE3DENS=HHDE3/AREA
+   336  INCE3AGGNF=INCE3AGGHD-INCE3AGGFA
+   337  INCE3AGGGP=INCE3AGG-INCE3AGGHD
+   338  INCE3PCAP=INCE3AGG/POPE3
+   339  INCE3AVEHH=INCE3AGGFA+INCE3AGGNF/HHDE3
+   340  INCE3AVEFA=INCE3AGGFA/HHDE3FAM
+   341  INCE3AVENF=INCE3AGGNF/HHDE3NFM
+   342  INCE3MEDHH=MEDIAN(HIXE3LT05:HIXE3GT500)
+   343  INCE3MEDFA=MEDIAN(FIXE3LT05:FIXE3GT500)
+   344  INCE3MEDNF=MEDIAN(NIXE3LT05:NIXE3GT500)
+   345  INCE3DENS=INCE3AGG/1000/AREA
+   346  INCE3INEQ=INEQUALITY(HIXE3LT05:HIXE3GT500)
+   373  FINE3LT10=FIXE3LT05+FIXE30510
+   374  FINE31015=FIXE31015
+   375  FINE31520=FIXE31520
+   376  FINE32025=FIXE32025
+   377  FINE32530=FIXE32530
+   378  FINE33035=FIXE33035
+   379  FINE33540=FIXE33540
+   380  FINE34045=FIXE34045
+   381  FINE34550=FIXE34550
+   382  FINE35060=FIXE35055+FIXE35560
+   383  FINE36075=SUM(FIXE36065:FIXE37075)
+   384  FINE375100=SUM(FIXE37580:FIXE395100)
+   385  FINE310025=FIXE310025
+   386  FINE312550=FIXE312550
+   387  FINE315020=FIXE315020
+   388  FINE3GT200=SUM(FIXE320050:FIXE3GT500)
+   415  HINE3LT10=HIXE3LT05+HIXE30510
+   416  HINE31015=HIXE31015
+   417  HINE31520=HIXE31520
+   418  HINE32025=HIXE32025
+   419  HINE32530=HIXE32530
+   420  HINE33035=HIXE33035
+   421  HINE33540=HIXE33540
+   422  HINE34045=HIXE34045
+   423  HINE34550=HIXE34550
+   424  HINE35060=HIXE35055+HIXE35560
+   425  HINE36075=SUM(HIXE36065:HIXE37075)
+   426  HINE375100=SUM(HIXE37580:HIXE395100)
+   427  HINE310025=HIXE310025
+   428  HINE312550=HIXE312550
+   429  HINE315020=HIXE315020
+   430  HINE3GT200=SUM(HIXE320050:HIXE3GT500)
+   431  NIXE3LT05=HIXE3LT05-FIXE3LT05
+   432  NIXE30510=HIXE30510-FIXE30510
+   433  NIXE31015=HIXE31015-FIXE31015
+   434  NIXE31520=HIXE31520-FIXE31520
+   435  NIXE32025=HIXE32025-FIXE32025
+   436  NIXE32530=HIXE32530-FIXE32530
+   437  NIXE33035=HIXE33035-FIXE33035
+   438  NIXE33540=HIXE33540-FIXE33540
+   439  NIXE34045=HIXE34045-FIXE34045
+   440  NIXE34550=HIXE34550-FIXE34550
+   441  NIXE35055=HIXE35055-FIXE35055
+   442  NIXE35560=HIXE35560-FIXE35560
+   443  NIXE36065=HIXE36065-FIXE36065
+   444  NIXE36570=HIXE36570-FIXE36570
+   445  NIXE37075=HIXE37075-FIXE37075
+   446  NIXE37580=HIXE37580-FIXE37580
+   447  NIXE38085=HIXE38085-FIXE38085
+   448  NIXE38590=HIXE38590-FIXE38590
+   449  NIXE39095=HIXE39095-FIXE39095
+   450  NIXE395100=HIXE395100-FIXE395100
+   451  NIXE310025=HIXE310025-FIXE310025
+   452  NIXE312550=HIXE312550-FIXE312550
+   453  NIXE315020=HIXE315020-FIXE315020
+   454  NIXE320050=HIXE320050-FIXE320050
+   455  NIXE325050=HIXE325050-FIXE325050
+   456  NIXE3GT500=HIXE3GT500-FIXE3GT500
+   457  NINE3LT10=NIXE3LT05+NIXE30510
+   458  NINE31015=NIXE31015
+   459  NINE31520=NIXE31520
+   460  NINE32025=NIXE32025
+   461  NINE32530=NIXE32530
+   462  NINE33035=NIXE33035
+   463  NINE33540=NIXE33540
+   464  NINE34045=NIXE34045
+   465  NINE34550=NIXE34550
+   466  NINE35060=NIXE35055+NIXE35560
+   467  NINE36075=SUM(NIXE36065:NIXE37075)
+   468  NINE375100=SUM(NIXE37580:NIXE395100)
+   469  NINE310025=NIXE310025
+   470  NINE312550=NIXE312550
+   471  NINE315020=NIXE315020
+   472  NINE3GT200=SUM(NIXE320050:NIXE3GT500)
+   489  CLWX3PRV=CLWX3MPRV+CLWX3FPRV
+   490  CLWX3SLF=CLWX3MSLF+CLWX3FSLF
+   491  CLWX3NPF=CLWX3MNPF+CLWX3FNPF
+   492  CLWX3LGV=CLWX3MLGV+CLWX3FLGV
+   493  CLWX3SGV=CLWX3MSGV+CLWX3FSGV
+   494  CLWX3FGV=CLWX3MFGV+CLWX3FFGV
+   495  CLWX3SLFX=CLWX3MSLFX+CLWX3FSLFX
+   496  CLWX3UNP=CLWX3MUNP+CLWX3FUNP
+   555  OCCX3MGMT=OCCX3MMGMT+OCCX3FMGMT
+   556  OCCX3BUSF=OCCX3MBUSF+OCCX3FBUSF
+   557  OCCX3COMP=OCCX3MCOMP+OCCX3FCOMP
+   558  OCCX3ARCH=OCCX3MARCH+OCCX3FARCH
+   559  OCCX3SCI=OCCX3MSCI+OCCX3FSCI
+   560  OCCX3COMM=OCCX3MCOMM+OCCX3FCOMM
+   561  OCCX3LEG=OCCX3MLEG+OCCX3FLEG
+   562  OCCX3EDUC=OCCX3MEDUC+OCCX3FEDUC
+   563  OCCX3ARTS=OCCX3MARTS+OCCX3FARTS
+   564  OCCX3HLT1=OCCX3MHLT1+OCCX3FHLT1
+   565  OCCX3HLT2=OCCX3MHLT2+OCCX3FHLT2
+   566  OCCX3HLT3=OCCX3MHLT3+OCCX3FHLT3
+   567  OCCX3FIRE=OCCX3MFIRE+OCCX3FFIRE
+   568  OCCX3COPS=OCCX3MCOPS+OCCX3FCOPS
+   569  OCCX3FPRP=OCCX3MFPRP+OCCX3FFPRP
+   570  OCCX3CLNG=OCCX3MCLNG+OCCX3FCLNG
+   571  OCCX3PCAR=OCCX3MPCAR+OCCX3FPCAR
+   572  OCCX3SALE=OCCX3MSALE+OCCX3FSALE
+   573  OCCX3OFF=OCCX3MOFF+OCCX3FOFF
+   574  OCCX3FARM=OCCX3MFARM+OCCX3FFARM
+   575  OCCX3CNEX=OCCX3MCNEX+OCCX3FCNEX
+   576  OCCX3INST=OCCX3MINST+OCCX3FINST
+   577  OCCX3PROD=OCCX3MPROD+OCCX3FPROD
+   578  OCCX3TRAN=OCCX3MTRAN+OCCX3FTRAN
+   579  OCCX3MATM=OCCX3MMATM+OCCX3FMATM
+   580  OCCX3WHTCL=SUM(OCCX3MGMT:OCCX3HLT2)+OCCX3SALE+OCCX3OFF
+   581  OCCX3BLUCL=SUM(OCCX3HLT3:OCCX3PCAR)+SUM(OCCX3OFF:OCCX3MATM)
+   582  INDX3AGRI=INDX3MAGRI+INDX3FAGRI
+   583  INDX3MINE=INDX3MMINE+INDX3FMINE
+   584  INDX3CONS=INDX3MCONS+INDX3FCONS
+   585  INDX3MMFG=INDX3MMMFG+INDX3FMMFG
+   586  INDX3WTRA=INDX3MWTRA+INDX3FWTRA
+   587  INDX3RTRA=INDX3MRTRA+INDX3FRTRA
+   588  INDX3TRAN=INDX3MTRAN+INDX3FTRAN
+   589  INDX3UTIL=INDX3MUTIL+INDX3FUTIL
+   590  INDX3INFO=INDX3MINFO+INDX3FINFO
+   591  INDX3FIN=INDX3MFIN+INDX3FFIN
+   592  INDX3REAL=INDX3MREAL+INDX3FREAL
+   593  INDX3PSRV=INDX3MPSRV+INDX3FPSRV
+   594  INDX3MGMT=INDX3MMGMT+INDX3FMGMT
+   595  INDX3ADS=INDX3MADS+INDX3FADS
+   596  INDX3EDUC=INDX3MEDUC+INDX3FEDUC
+   597  INDX3HLTH=INDX3MHLTH+INDX3FHLTH
+   598  INDX3ARTS=INDX3MARTS+INDX3FARTS
+   599  INDX3FOOD=INDX3MFOOD+INDX3FFOOD
+   600  INDX3OTHR=INDX3MOTHR+INDX3FOTHR
+   601  INDX3PUBA=INDX3MPUBA+INDX3FPUBA
+   685  TVWX3MED=MEDIAN(TVWX3LT5:TVWX3GT90)
+   686  LBFE3ARM=LBFE3MARM+LBFE3FARM
+   687  LBFE3EMPL=LBFE3MEMPL+LBFE3FEMPL
+   688  LBFE3UNEM=LBFE3MUNEM+LBFE3FUNEM
+   689  LBFE3NLF=LBFE3MNLF+LBFE3FNLF
+   690  UNEE3RATE=LBFE3UNEM/SUM(LBFE3ARM:LBFE3UNEM)%
+   691  LBFE3LBF=SUM(LBFE3ARM:LBFE3UNEM)
+   692  LBFE3MALE=LBFE3MEMPL+LBFE3MUNEM
+   693  LBFE3FEM=LBFE3FEMPL+LBFE3FUNEM
+   699  AGEE3F0004=SUM(AGDE3FLT1:AGDE3F4)
+   700  AGEE3F0509=SUM(AGDE3F5:AGDE3F9)
+   701  AGEE3F1014=SUM(AGDE3F10:AGDE3F14)
+   702  AGEE3F1519=SUM(AGDE3F15:AGDE3F19)
+   703  AGEE3F2024=AGDE3F2024
+   704  AGEE3F2529=AGDE3F2529
+   705  AGEE3F3034=AGDE3F3034
+   706  AGEE3F3539=AGDE3F3539
+   707  AGEE3F4044=AGDE3F4044
+   708  AGEE3F4549=AGDE3F4549
+   709  AGEE3F5054=AGDE3F5054
+   710  AGEE3F5559=AGDE3F5559
+   711  AGEE3F6064=AGDE3F6064
+   712  AGEE3F6569=AGDE3F6569
+   713  AGEE3F7074=AGDE3F7074
+   714  AGEE3F7579=AGDE3F7579
+   715  AGEE3F8084=AGDE3F8084
+   716  AGEE3FGT85=AGDE3FGT85
+   717  AGEE3M0004=SUM(AGDE3MLT1:AGDE3M4)
+   718  AGEE3M0509=SUM(AGDE3M5:AGDE3M9)
+   719  AGEE3M1014=SUM(AGDE3M10:AGDE3M14)
+   720  AGEE3M1519=SUM(AGDE3M15:AGDE3M19)
+   721  AGEE3M2024=AGDE3M2024
+   722  AGEE3M2529=AGDE3M2529
+   723  AGEE3M3034=AGDE3M3034
+   724  AGEE3M3539=AGDE3M3539
+   725  AGEE3M4044=AGDE3M4044
+   726  AGEE3M4549=AGDE3M4549
+   727  AGEE3M5054=AGDE3M5054
+   728  AGEE3M5559=AGDE3M5559
+   729  AGEE3M6064=AGDE3M6064
+   730  AGEE3M6569=AGDE3M6569
+   731  AGEE3M7074=AGDE3M7074
+   732  AGEE3M7579=AGDE3M7579
+   733  AGEE3M8084=AGDE3M8084
+   734  AGEE3MGT85=AGDE3MGT85
+   735  AGEE30004=AGEE3M0004+AGEE3F0004
+   736  AGEE30509=AGEE3M0509+AGEE3F0509
+   737  AGEE31014=AGEE3M1014+AGEE3F1014
+   738  AGEE31519=AGEE3M1519+AGEE3F1519
+   739  AGEE32024=AGEE3M2024+AGEE3F2024
+   740  AGEE32529=AGEE3M2529+AGEE3F2529
+   741  AGEE33034=AGEE3M3034+AGEE3F3034
+   742  AGEE33539=AGEE3M3539+AGEE3F3539
+   743  AGEE34044=AGEE3M4044+AGEE3F4044
+   744  AGEE34549=AGEE3M4549+AGEE3F4549
+   745  AGEE35054=AGEE3M5054+AGEE3F5054
+   746  AGEE35559=AGEE3M5559+AGEE3F5559
+   747  AGEE36064=AGEE3M6064+AGEE3F6064
+   748  AGEE36569=AGEE3M6569+AGEE3F6569
+   749  AGEE37074=AGEE3M7074+AGEE3F7074
+   750  AGEE37579=AGEE3M7579+AGEE3F7579
+   751  AGEE38084=AGEE3M8084+AGEE3F8084
+   752  AGEE3GT85=AGEE3MGT85+AGEE3FGT85
+   989  AGDE3LT1=AGDE3MLT1+AGDE3FLT1
+   990  AGDE31=AGDE3M1+AGDE3F1
+   991  AGDE32=AGDE3M2+AGDE3F2
+   992  AGDE33=AGDE3M3+AGDE3F3
+   993  AGDE34=AGDE3M4+AGDE3F4
+   994  AGDE35=AGDE3M5+AGDE3F5
+   995  AGDE36=AGDE3M6+AGDE3F6
+   996  AGDE37=AGDE3M7+AGDE3F7
+   997  AGDE38=AGDE3M8+AGDE3F8
+   998  AGDE39=AGDE3M9+AGDE3F9
+   999  AGDE310=AGDE3M10+AGDE3F10
+  1000  AGDE311=AGDE3M11+AGDE3F11
+  1001  AGDE312=AGDE3M12+AGDE3F12
+  1002  AGDE313=AGDE3M13+AGDE3F13
+  1003  AGDE314=AGDE3M14+AGDE3F14
+  1004  AGDE315=AGDE3M15+AGDE3F15
+  1005  AGDE316=AGDE3M16+AGDE3F16
+  1006  AGDE317=AGDE3M17+AGDE3F17
+  1007  AGDE318=AGDE3M18+AGDE3F18
+  1008  AGDE319=AGDE3M19+AGDE3F19
+  1009  AGDE32024=AGDE3M2024+AGDE3F2024
+  1010  AGDE32529=AGDE3M2529+AGDE3F2529
+  1011  AGDE33034=AGDE3M3034+AGDE3F3034
+  1012  AGDE33539=AGDE3M3539+AGDE3F3539
+  1013  AGDE34044=AGDE3M4044+AGDE3F4044
+  1014  AGDE34549=AGDE3M4549+AGDE3F4549
+  1015  AGDE35054=AGDE3M5054+AGDE3F5054
+  1016  AGDE35559=AGDE3M5559+AGDE3F5559
+  1017  AGDE36064=AGDE3M6064+AGDE3F6064
+  1018  AGDE36569=AGDE3M6569+AGDE3F6569
+  1019  AGDE37074=AGDE3M7074+AGDE3F7074
+  1020  AGDE37579=AGDE3M7579+AGDE3F7579
+  1021  AGDE38084=AGDE3M8084+AGDE3F8084
+  1022  AGDE3GT85=AGDE3MGT85+AGDE3FGT85
+  1033  POPE3GRPNI=GRPE3COLL+GRPE3MIL+GRPE3OTHN
+  1034  POPE3GRPI=POPE3GRP-POPE3GRPNI
+  1036  HISE3NONH=POPE3-HISE3HISP
+  1039  POPE3NFM=POPE3-POPE3FAM-POPE3GRP
+  1040  LBFE3POP16=SUM(LBFE3MARM:LBFE3FNLF)
+  1046  AGEE3GT25=SUM(EDUE3LTGR9:EDUE3GRAD)
+  1047  AGEE3GT15=SUM(MARE3NEVER:MARE3DIVOR)
+  1048  AGEE3MED=JOINTMEDIAN(AGDE3MLT1:AGDE3MGT85,AGDE3FLT1:AGDE3FGT85)
+  1049  AGEE3MEDM=MEDIAN(AGDE3MLT1:AGDE3MGT85)
+  1050  AGEE3MEDF=MEDIAN(AGDE3FLT1:AGDE3FGT85)
+  1051  PANE3HHD=HHDE3
+  1052  PANE3POP=POPE3
+  1053  PANE3ADULT=SUM(AGDE318:AGDE3GT85)
+  1054  PANE3ADMAL=SUM(AGDE3M18:AGDE3MGT85)
+  1055  PANE3ADFEM=SUM(AGDE3F18:AGDE3FGT85)
+  1078  RACE3DIVER=DIVERSITY(RCHE3WHNHS:RCHE3MUHIS)
+  1108  SCHX3FTOT=SUM(SCHX3FPPS:SCHX3FNISC)
+  1124  SCHX3MTOT=SUM(SCHX3MPPS:SCHX3MNISC)
+  1137  VSEX3TOTF=SUM(VSEX31VETF:VSEX35NVTF)
+  1148  VSEX3TOTM=SUM(VSEX31VETM:VSEX35NVTM)
+  1149  VETX3TOT=VSEX31VETM+VSEX32VETM+VSEX33VETM+VSEX34VETM+VSEX35VETM+VSEX31VETF+VSEX32VETF+VSEX33VETF+VSEX34VETF+VSEX35VETF
+  1151  POPE3DENS=POPE3/AREA
+  1152  HAGE3GT75=HAGE37584+HAGE3GT85
+
+
+END NOTES
+
+1. Income inequality measures are based on the Gini coefficient, which measures deviation from a uniform cumulative distribution.  Range is 0 (complete equality) to 1 (complete inequality).
+2. Area is approximate only and excludes internal water areas.
+3. All dollar related data - income, expenditures, rent, housing values, retail sales, etc. - are reported in current not constant dollars.
+4. Poverty levels are defined by the US Census Bureau based on standard census based income definitions for forty-eight groupings based on family size and regional context (urban/non urban).
+5. Ancestry counts do not add to the total population since multiple responses are permitted.
+
+
+REFERENCES
+
+     https://appliedgeographic.com/Data/Methodologies/Estimates and Projections.pdf
+     https://appliedgeographic.com/Data/Methodologies/Environmental.pdf
+
+Records written: 40757
+Elapsed time   : 34.87 seconds, 1168.83 records/second
+
+SnapShot 3.00 Build  1 (1/29/2026 01:47 PM)

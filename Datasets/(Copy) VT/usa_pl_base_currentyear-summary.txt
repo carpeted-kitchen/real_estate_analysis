@@ -1,0 +1,821 @@
+SNAPSHOT PRODUCTION SUMMARY
+Date: 02-25-2026
+Time: 12:46:09
+Library Version:  25b_1104
+Template:         d:\snapshot2025b\templates\packages_usa\base_currentyear.rpt
+Geographic Level: [PL] Census Place (2020)
+
+FIELD REFERENCE
+
+Number  Fields     Description
+
+     1  ID         Geographic Area Code
+     2  NAME       Geographic Area Name
+     3  POPCY      Population
+     4  AGECY0004  Population age 0-4
+     5  AGECY0509  Population age 5-9
+     6  AGECY1014  Population age 10-14
+     7  AGECY1519  Population age 15-19
+     8  AGECY2024  Population age 20-24
+     9  AGECY2529  Population age 25-29
+    10  AGECY3034  Population age 30-34
+    11  AGECY3539  Population age 35-39
+    12  AGECY4044  Population age 40-44
+    13  AGECY4549  Population age 45-49
+    14  AGECY5054  Population age 50-54
+    15  AGECY5559  Population age 55-59
+    16  AGECY6064  Population age 60-64
+    17  AGECY6569  Population age 65-69
+    18  AGECY7074  Population age 70-74
+    19  AGECY7579  Population age 75-79
+    20  AGECY8084  Population age 80-84
+    21  AGECYGT85  Population age 85+
+    22  AGECYM0004 Pop male < 5 yrs
+    23  AGECYM0509 Pop male 5-9 yrs
+    24  AGECYM1014 Pop male 10-14 yrs
+    25  AGECYM1519 Pop male 15-19 yrs
+    26  AGECYM2024 Pop male 20-24 yrs
+    27  AGECYM2529 Pop male 25-29 yrs
+    28  AGECYM3034 Pop male 30-34 yrs
+    29  AGECYM3539 Pop male 35-39 yrs
+    30  AGECYM4044 Pop male 40-44 yrs
+    31  AGECYM4549 Pop male 45-49 yrs
+    32  AGECYM5054 Pop male 50-54 yrs
+    33  AGECYM5559 Pop male 55-59 yrs
+    34  AGECYM6064 Pop male 60-64 yrs
+    35  AGECYM6569 Pop male 65-69 yrs
+    36  AGECYM7074 Pop male 70-74 yrs
+    37  AGECYM7579 Pop male 75-79 yrs
+    38  AGECYM8084 Pop male 80-84 yrs
+    39  AGECYMGT85 Pop male 85+ yrs
+    40  AGECYF0004 Pop female < 5 yrs
+    41  AGECYF0509 Pop female 5-9 yrs
+    42  AGECYF1014 Pop female 10-14 yrs
+    43  AGECYF1519 Pop female 15-19 yrs
+    44  AGECYF2024 Pop female 20-24 yrs
+    45  AGECYF2529 Pop female 25-29 yrs
+    46  AGECYF3034 Pop female 30-34 yrs
+    47  AGECYF3539 Pop female 35-39 yrs
+    48  AGECYF4044 Pop female 40-44 yrs
+    49  AGECYF4549 Pop female 45-49 yrs
+    50  AGECYF5054 Pop female 50-54 yrs
+    51  AGECYF5559 Pop female 55-59 yrs
+    52  AGECYF6064 Pop female 60-64 yrs
+    53  AGECYF6569 Pop female 65-69 yrs
+    54  AGECYF7074 Pop female 70-74 yrs
+    55  AGECYF7579 Pop female 75-79 yrs
+    56  AGECYF8084 Pop female 80-84 yrs
+    57  AGECYFGT85 Pop female 85+ yrs
+    58  AGECYMED   Median Age
+    59  AGECYMEDM  Median Age Males
+    60  AGECYMEDF  Median Age Females
+    61  HISCYHISP  Population Hispanic
+    62  HISCYNONH  Population Non-Hispanic
+    63  RACCYWHITE Population white
+    64  RACCYBLACK Population black
+    65  RACCYAMIND Population American Indian/Alaska Native
+    66  RACCYASIAN Population Asian
+    67  RACCYHAWAI Population Hawaiian/Pacific Islander
+    68  RACCYOTHER Population other race
+    69  RACCYMULT  Population multirace
+    70  RCHCYWHNHS Non Hispanic White
+    71  RCHCYBLNHS Non Hispanic Black
+    72  RCHCYAMNHS Non Hispanic American Indian
+    73  RCHCYASNHS Non Hispanic Asian
+    74  RCHCYHANHS Non Hispanic Hawaiian/Pacific Islander
+    75  RCHCYOTNHS Non Hispanic Other Race
+    76  RCHCYMUNHS Non Hispanic Multiple Race
+    77  RCHCYWHHIS Hispanic White
+    78  RCHCYBLHIS Hispanic Black
+    79  RCHCYAMHIS Hispanic American Indian
+    80  RCHCYASHIS Hispanic Asian
+    81  RCHCYHAHIS Hispanic Hawaiian/Pacific Islander
+    82  RCHCYOTHIS Hispanic Other Race
+    83  RCHCYMUHIS Hispanic Multiple Race
+    84  POPCYFAM   Population in Family Households
+    85  POPCYNFM   Population in Non-Family Households
+    86  POPCYGRP   Population in Group Quarters
+    87  GRPCYCOLL  Group Quarters: College Housing
+    88  GRPCYMIL   Group Quarters: Military Barracks
+    89  GRPCYOTHN  Group Quarters: Other Non-Institutional
+    90  POPCYGT15  Population Age 15+
+    91  MARCYNEVER Never Married
+    92  MARCYMARR  Now Married
+    93  MARCYSEP   Separated
+    94  MARCYWIDOW Widowed
+    95  MARCYDIVOR Divorced
+    96  POPCYGT25  Population Age 25+
+    97  EDUCYLTGR9 Pop 25+ less than 9th grade
+    98  EDUCYSHSCH Pop 25+ 9th-12th grade no diploma
+    99  EDUCYHSCH  Pop 25+ HS graduate
+   100  EDUCYSCOLL Pop 25+ college no diploma
+   101  EDUCYASSOC Pop 25+ Associate degree
+   102  EDUCYBACH  Pop 25+ Bachelor's degree
+   103  EDUCYGRAD  Pop 25+ graduate or prof school degree
+   104  LBFCYPOP16 Population Age 16+
+   105  LBFCYMPOP1 Male Population Age 16+
+   106  LBFCYFPOP1 Female Population Age 16+
+   107  LBFCYARM   Pop 16+ in Armed Forces
+   108  LBFCYEMPL  Pop 16+ civilian employed
+   109  LBFCYUNEM  Pop 16+ civilian unemployed
+   110  LBFCYNLF   Pop 16+ not in labor force
+   111  LBFCYMARM  Pop male 16+ in Armed Forces
+   112  LBFCYMEMPL Pop male 16+ civilian employed
+   113  LBFCYMUNEM Pop male 16+ civilian unemployed
+   114  LBFCYMNLF  Pop male 16+ not in labor force
+   115  LBFCYFARM  Pop female 16+ in Armed Forces
+   116  LBFCYFEMPL Pop female 16+ civilian employed
+   117  LBFCYFUNEM Pop female 16+ civilian unemployed
+   118  LBFCYFNLF  Pop female 16+ not in labor force
+   119  TVWEXLT5   Travel Time to Work: Less than 5 minutes
+   120  TVWEX0509  Travel Time to Work: 5 to 9 minutes
+   121  TVWEX1014  Travel Time to Work: 10 to 14 minutes
+   122  TVWEX1519  Travel Time to Work: 15 to 19 minutes
+   123  TVWEX2024  Travel Time to Work: 20 to 24 minutes
+   124  TVWEX2529  Travel Time to Work: 25 to 29 minutes
+   125  TVWEX3034  Travel Time to Work: 30 to 34 minutes
+   126  TVWEX3539  Travel Time to Work: 35 to 39 minutes
+   127  TVWEX4044  Travel Time to Work: 40 to 44 minutes
+   128  TVWEX4559  Travel Time to Work: 45 to 59 minutes
+   129  TVWEX6089  Travel Time to Work: 60 to 89 minutes
+   130  TVWEXGT90  Travel Time to Work: 90 or more minutes
+   131  TVWEXMED   Median Travel Time to Work
+   132  TRWEXDRV1  Means of Transportation to Work: Drove alone
+   133  TRWEXCPOL2 Means of Transportation to Work: In 2-person carpool
+   134  TRWEXCPOL3 Means of Transportation to Work: In 3-person carpool
+   135  TRWEXCPOL4 Means of Transportation to Work: In 4-person carpool
+   136  TRWEXCPOL5 Means of Transportation to Work: In 5-or-6-person carpool
+   137  TRWEXCPOL7 Means of Transportation to Work: In 7-or-more-person carpool
+   138  TRWEXBUS   Means of Transportation to Work: Bus or trolley bus
+   139  TRWEXSTCAR Means of Transportation to Work: Streetcar or trolley car
+   140  TRWEXSUB   Means of Transportation to Work: Subway or elevated
+   141  TRWEXRAIL  Means of Transportation to Work: Railroad
+   142  TRWEXFERRY Means of Transportation to Work: Ferryboat
+   143  TRWEXTAXI  Means of Transportation to Work: Taxicab
+   144  TRWEXMOTOR Means of Transportation to Work: Motorcycle
+   145  TRWEXBICYC Means of Transportation to Work: Bicycle
+   146  TRWEXWALK  Means of Transportation to Work: Walked
+   147  TRWEXOTHR  Means of Transportation to Work: Other means
+   148  TRWEXHOME  Means of Transportation to Work: Worked at home
+   149  TLWEXT01   Time Leaving for Work: 12:00 a.m. to 4:59 a.m.
+   150  TLWEXT02   Time Leaving for Work: 5:00 a.m. to 5:29 a.m.
+   151  TLWEXT03   Time Leaving for Work: 5:30 a.m. to 5:59 a.m.
+   152  TLWEXT04   Time Leaving for Work: 6:00 a.m. to 6:29 a.m.
+   153  TLWEXT05   Time Leaving for Work: 6:30 a.m. to 6:59 a.m.
+   154  TLWEXT06   Time Leaving for Work: 7:00 a.m. to 7:29 a.m.
+   155  TLWEXT07   Time Leaving for Work: 7:30 a.m. to 7:59 a.m.
+   156  TLWEXT08   Time Leaving for Work: 8:00 a.m. to 8:29 a.m.
+   157  TLWEXT09   Time Leaving for Work: 8:30 a.m. to 8:59 a.m.
+   158  TLWEXT10   Time Leaving for Work: 9:00 a.m. to 9:59 a.m.
+   159  TLWEXT11   Time Leaving for Work: 10:00 a.m. to 10:59 a.m.
+   160  TLWEXT12   Time Leaving for Work: 11:00 a.m. to 11:59 a.m.
+   161  TLWEXT13   Time Leaving for Work: 12:00 p.m. to 3:59 p.m.
+   162  TLWEXT14   Time Leaving for Work: 4:00 p.m. to 11:59 p.m.
+   163  OCCEXMGMT  Occupation: Management occupations
+   164  OCCEXBUSF  Occupation: Business and financial operations occupations
+   165  OCCEXCOMP  Occupation: Computer and mathematical occupations
+   166  OCCEXARCH  Occupation: Architecture and engineering occupations
+   167  OCCEXSCI   Occupation: Life, physical, and social science occupations
+   168  OCCEXCOMM  Occupation: Community and social service occupations
+   169  OCCEXLEG   Occupation: Legal occupations
+   170  OCCEXEDUC  Occupation: Education, training, and library occupations
+   171  OCCEXARTS  Occupation: Arts, design, entertainment, sports, and media occupations
+   172  OCCEXHLT1  Occupation: Health diagnosing and treating practitioners and other technical occupations
+   173  OCCEXHLT2  Occupation: Health technologists and technicians
+   174  OCCEXHLT3  Occupation: Healthcare support occupations
+   175  OCCEXFIRE  Occupation: Fire fighting and prevention, and other protective service workers including supervisors
+   176  OCCEXCOPS  Occupation: Law enforcement workers including supervisors
+   177  OCCEXFPRP  Occupation: Food preparation and serving related occupations
+   178  OCCEXCLNG  Occupation: Building and grounds cleaning and maintenance occupations
+   179  OCCEXPCAR  Occupation: Personal care and service occupations
+   180  OCCEXSALE  Occupation: Sales and related occupations
+   181  OCCEXOFF   Occupation: Office and administrative support occupations
+   182  OCCEXFARM  Occupation: Farming, fishing, and forestry occupations
+   183  OCCEXCNEX  Occupation: Construction and extraction occupations
+   184  OCCEXINST  Occupation: Installation, maintenance, and repair occupations
+   185  OCCEXPROD  Occupation: Production occupations
+   186  OCCEXTRAN  Occupation: Transportation occupations
+   187  OCCEXMATM  Occupation: Material moving occupations
+   188  INDEXAGRI  Industry: Agriculture, forestry, fishing and hunting
+   189  INDEXMINE  Industry: Mining, quarrying, and oil and gas extraction
+   190  INDEXCONS  Industry: Construction
+   191  INDEXMMFG  Industry: Manufacturing
+   192  INDEXWTRA  Industry: Wholesale trade
+   193  INDEXRTRA  Industry: Retail trade
+   194  INDEXTRAN  Industry: Transportation and warehousing
+   195  INDEXUTIL  Industry: Utilities
+   196  INDEXINFO  Industry: Information
+   197  INDEXFIN   Industry: Finance and insurance
+   198  INDEXREAL  Industry: Real estate and rental and leasing
+   199  INDEXPSRV  Industry: Professional, scientific, and technical services
+   200  INDEXMGMT  Industry: Management of companies and enterprises
+   201  INDEXADS   Industry: Administrative and support and waste management services
+   202  INDEXEDUC  Industry: Educational services
+   203  INDEXHLTH  Industry: Health care and social assistance
+   204  INDEXARTS  Industry: Arts, entertainment, and recreation
+   205  INDEXFOOD  Industry: Accommodation and food services
+   206  INDEXOTHR  Industry: Other services, except public administration
+   207  INDEXPUBA  Industry: Public administration
+   208  CLWEXPRV   Class of Worker:  Employee of private company wrkrs
+   209  CLWEXSLF   Class of Worker:  Self-Empl in own incorporated business wrkrs
+   210  CLWEXNPF   Class of Worker:  Private not-for-profit wage and salary wrkrs
+   211  CLWEXLGV   Class of Worker:  Local government wrkrs
+   212  CLWEXSGV   Class of Worker:  State government wrkrs
+   213  CLWEXFGV   Class of Worker:  Federal government wrkrs
+   214  CLWEXSLFX  Class of Worker:  Self-Empl in own not incorporated business wrkrs
+   215  CLWEXUNP   Class of Worker:  Unpaid family wrkrs
+   216  HHDCY      Households
+   217  HHDCYFAM   Family Households
+   218  HHDCYNFM   Non-Family Households
+   219  HHSCYMCFCH Families married couple w children
+   220  HHSCYLPMCH Families male no wife w children
+   221  HHSCYLPFCH Families female no husband children
+   222  HHSCYMCFNC Families married couple no children
+   223  HHSCYLPMNC Families male no wife no children
+   224  HHSCYLPFNC Families female no husband no children
+   225  HHDCYS1    Households 1-person
+   226  HHDCYS2    Households 2-persons
+   227  HHDCYS3    Households 3-persons
+   228  HHDCYS4    Households 4-persons
+   229  HHDCYS5    Households 5-persons
+   230  HHDCYS6    Households 6-persons
+   231  HHDCYS7    Households 7+ persons
+   232  HHDCYAVESZ Average Household Size
+   233  FAMCYAVESZ Average Family Size
+   234  NFMCYAVESZ Average Non-Family Household Size
+   235  HAGCY1524  Households householder 15-24 yrs
+   236  HAGCY2534  Households householder 25-34 yrs
+   237  HAGCY3544  Households householder 35-44 yrs
+   238  HAGCY4554  Households householder 45-54 yrs
+   239  HAGCY5564  Households householder 55-64 yrs
+   240  HAGCY6574  Households householder 65-74 yrs
+   241  HAGCY7584  Households householder 75-84 yrs
+   242  HAGCYGT85  Households householder 85+ yrs
+   243  HHDCYMEDAG Median Age of Householder
+   244  VPHCY1     Households: One Vehicle Available
+   245  VPHCY2     Households: Two Vehicles Available
+   246  VPHCY3     Households: Three Vehicles Available
+   247  VPHCY4     Households: Four Vehicles Available
+   248  VPHCY5     Households: Five+ Vehicles Available
+   249  VPHCYAVE   Households: Average Vehicles Available
+   250  VPHCYO0    Owner hh no vehicle available
+   251  VPHCYO1    Owner hh 1 vehicle available
+   252  VPHCYO2    Owner hh 2 vehicles available
+   253  VPHCYO3    Owner hh 3 vehicles available
+   254  VPHCYO4    Owner hh 4 vehicles available
+   255  VPHCYO5    Owner hh 5+ vehicles available
+   256  VAVCYOTOT  Agg vehicles available owner hshlds
+   257  VPHCYR0    Renter hh no vehicle available
+   258  VPHCYR1    Renter hh 1 vehicle available
+   259  VPHCYR2    Renter hh 2 vehicles available
+   260  VPHCYR3    Renter hh 3 vehicles available
+   261  VPHCYR4    Renter hh 4 vehicles available
+   262  VPHCYR5    Renter hh 5+ vehicles available
+   263  VAVCYRTOT  Agg vehicles available renter hshlds
+   264  LNIEXENGL  Household Language: English
+   265  LNIEXSPNIS Household Language: Spanish Linguistically isolated
+   266  LNIEXSPNN  Household Language: Spanish Not Linguistically isolated
+   267  LNIEXIEUIS Household Language: Other Indo-EuropeanLinguistically isolated
+   268  LNIEXIUEN  Household Language: Other Indo-European Not Linguistically isolated
+   269  LNIEXASNIS Household Language: Asian and Pacific IslandLinguistically isolated
+   270  LNIEXASNN  Household Language: Asian and Pacific Island Not Linguistically isolated
+   271  LNIEXOTHIN Household Language: OtherLinguistically isolated
+   272  LNIEXOTHN  Household Language: Other Not Linguistically isolated
+   273  LNICYNENG  Non-English Speaking Households
+   274  LNICYENGP  Bilingual Households
+   275  LNICYISOL  Linguistically Isolated Households
+   276  INCCYAGG   Aggregate Income
+   277  INCCYAGGFA Aggregate Family Household Income
+   278  INCCYAGGNF Aggregate Non-Family Household Income
+   279  INCCYAGGGP Aggregate Group Quarters Income
+   280  INCCYPCAP  Per capita income
+   281  INCCYAVEHH Average household Income
+   282  INCCYAVEFA Average family income
+   283  INCCYAVENF Average Non-Family Income
+   284  INCCYMEDHH Median household income
+   285  INCCYMEDFA Median family income
+   286  INCCYMEDNF Median Non-Family Income
+   287  HIXCYLT05  Hshlds income <$5000
+   288  HIXCY0510  Hshlds income $5000-9999
+   289  HIXCY1015  Hshlds income $10000-14999
+   290  HIXCY1520  Hshlds income $15000-19999
+   291  HIXCY2025  Hshlds income $20000-24999
+   292  HIXCY2530  Hshlds income $25000-29999
+   293  HIXCY3035  Hshlds income $30000-34999
+   294  HIXCY3540  Hshlds income $35000-39999
+   295  HIXCY4045  Hshlds income $40000-44999
+   296  HIXCY4550  Hshlds income $45000-49999
+   297  HIXCY5055  Hshlds income $50000-54999
+   298  HIXCY5560  Hshlds income $55000-59999
+   299  HIXCY6065  Hshlds income $60000-64999
+   300  HIXCY6570  Hshlds income $65000-69999
+   301  HIXCY7075  Hshlds income $70000-74999
+   302  HIXCY7580  Hshlds income $75000-79999
+   303  HIXCY8085  Hshlds income $80000-84999
+   304  HIXCY8590  Hshlds income $85000-89999
+   305  HIXCY9095  Hshlds income $90000-94999
+   306  HIXCY95100 Hshlds income $95000-99999
+   307  HIXCY10025 Hshlds income $100000-124999
+   308  HIXCY12550 Hshlds income $125000-149999
+   309  HIXCY15020 Hshlds income $150000-199999
+   310  HIXCY20050 Hshlds income $200000-249999
+   311  HIXCY25050 Hshlds income $250000-499999
+   312  HIXCYGT500 Hshlds income $500000+
+   313  FIXCYLT05  Families income <$5000
+   314  FIXCY0510  Families income $5000-9999
+   315  FIXCY1015  Families income $10000-14999
+   316  FIXCY1520  Families income $15000-19999
+   317  FIXCY2025  Families income $20000-24999
+   318  FIXCY2530  Families income $25000-29999
+   319  FIXCY3035  Families income $30000-34999
+   320  FIXCY3540  Families income $35000-39999
+   321  FIXCY4045  Families income $40000-44999
+   322  FIXCY4550  Families income $45000-49999
+   323  FIXCY5055  Families income $50000-54999
+   324  FIXCY5560  Families income $55000-59999
+   325  FIXCY6065  Families income $60000-64999
+   326  FIXCY6570  Families income $65000-69999
+   327  FIXCY7075  Families income $70000-74999
+   328  FIXCY7580  Families income $75000-79999
+   329  FIXCY8085  Families income $80000-84999
+   330  FIXCY8590  Families income $85000-89999
+   331  FIXCY9095  Families income $90000-94999
+   332  FIXCY95100 Families income $95000-99999
+   333  FIXCY10025 Families income $100000-124999
+   334  FIXCY12550 Families income $125000-149999
+   335  FIXCY15020 Families income $150000-199999
+   336  FIXCY20050 Families income $200000-249999
+   337  FIXCY25050 Families income $250000-499999
+   338  FIXCYGT500 Families income $500000+
+   339  HINCYMED24 Median Income Age <25
+   340  HINCYMED25 Median Income Age 25-34
+   341  HINCYMED35 Median Income Age 35-44
+   342  HINCYMED45 Median Income Age 45-54
+   343  HINCYMED55 Median Income Age 55-64
+   344  HINCYMED65 Median Income Age 65-74
+   345  HINCYMED75 Median Income Age 75+
+   346  DWLCY      Housing units
+   347  DWLCYVACNT Housing units vacant
+   348  DWLCYOCCUP Housing units occupied
+   349  DWLCYRENT  Occupied units renter
+   350  DWLCYOWNED Occupied units owner
+   351  YBTEX1019  Year Structure Built:  Built 2010 to 2019
+   352  YBTEX20UP  Year Structure Built:  Built 2020 or later
+   353  YBTEX0009  Year Structure Built:  Built 2000 to 2009
+   354  YBTEX9099  Year Structure Built:  Built 1990 to 1999
+   355  YBTEX8089  Year Structure Built:  Built 1980 to 1989
+   356  YBTEX7079  Year Structure Built:  Built 1970 to 1979
+   357  YBTEX6069  Year Structure Built:  Built 1960 to 1969
+   358  YBTEX5059  Year Structure Built:  Built 1950 to 1959
+   359  YBTEX4049  Year Structure Built:  Built 1940 to 1949
+   360  YBTEX39PR  Year Structure Built:  Built 1939 or earlier
+   361  HUSEX1DET  Units in Structure: 1, detached
+   362  HUSEX1ATT  Units in Structure: 1, attached
+   363  HUSEX2     Units in Structure: 2
+   364  HUSEX0304  Units in Structure: 3 or 4
+   365  HUSEX0509  Units in Structure: 5 to 9
+   366  HUSEX1019  Units in Structure: 10 to 19
+   367  HUSEX2049  Units in Structure: 20 to 49
+   368  HUSEXGT50  Units in Structure: 50 or more
+   369  HUSEXMOB   Units in Structure: Mobile home
+   370  HUSEXBOAT  Units in Structure: Boat, RV, van, etc.
+   371  RNTEX01    Cash Rent: Less than $100
+   372  RNTEX02    Cash Rent: $100 to $149
+   373  RNTEX03    Cash Rent: $150 to $199
+   374  RNTEX04    Cash Rent: $200 to $249
+   375  RNTEX05    Cash Rent: $250 to $299
+   376  RNTEX06    Cash Rent: $300 to $349
+   377  RNTEX07    Cash Rent: $350 to $399
+   378  RNTEX08    Cash Rent: $400 to $449
+   379  RNTEX09    Cash Rent: $450 to $499
+   380  RNTEX10    Cash Rent: $500 to $549
+   381  RNTEX11    Cash Rent: $550 to $599
+   382  RNTEX12    Cash Rent: $600 to $649
+   383  RNTEX13    Cash Rent: $650 to $699
+   384  RNTEX14    Cash Rent: $700 to $749
+   385  RNTEX15    Cash Rent: $750 to $799
+   386  RNTEX16    Cash Rent: $800 to $899
+   387  RNTEX17    Cash Rent: $900 to $999
+   388  RNTEX18    Cash Rent: $1,000 to $1,249
+   389  RNTEX19    Cash Rent: $1,250 to $1,499
+   390  RNTEX20    Cash Rent: $1,500 to $1,999
+   391  RNTEX21    Cash Rent: $2,000 to $2,499
+   392  RNTEX22    Cash Rent: $2,500 to $2,999
+   393  RNTEX23    Cash Rent: $3,000 to $3,499
+   394  RNTEX24    Cash Rent: $3,500 or more
+   395  RNTEX25    Cash Rent: No cash rent
+   396  HOOEXV01   Value of Owner Occupied Housing Units: Less than $10,000
+   397  HOOEXV02   Value of Owner Occupied Housing Units: $10,000 to $14,999
+   398  HOOEXV03   Value of Owner Occupied Housing Units: $15,000 to $19,999
+   399  HOOEXV04   Value of Owner Occupied Housing Units: $20,000 to $24,999
+   400  HOOEXV05   Value of Owner Occupied Housing Units: $25,000 to $29,999
+   401  HOOEXV06   Value of Owner Occupied Housing Units: $30,000 to $34,999
+   402  HOOEXV07   Value of Owner Occupied Housing Units: $35,000 to $39,999
+   403  HOOEXV08   Value of Owner Occupied Housing Units: $40,000 to $49,999
+   404  HOOEXV09   Value of Owner Occupied Housing Units: $50,000 to $59,999
+   405  HOOEXV10   Value of Owner Occupied Housing Units: $60,000 to $69,999
+   406  HOOEXV11   Value of Owner Occupied Housing Units: $70,000 to $79,999
+   407  HOOEXV12   Value of Owner Occupied Housing Units: $80,000 to $89,999
+   408  HOOEXV13   Value of Owner Occupied Housing Units: $90,000 to $99,999
+   409  HOOEXV14   Value of Owner Occupied Housing Units: $100,000 to $124,999
+   410  HOOEXV15   Value of Owner Occupied Housing Units: $125,000 to $149,999
+   411  HOOEXV16   Value of Owner Occupied Housing Units: $150,000 to $174,999
+   412  HOOEXV17   Value of Owner Occupied Housing Units: $175,000 to $199,999
+   413  HOOEXV18   Value of Owner Occupied Housing Units: $200,000 to $249,999
+   414  HOOEXV19   Value of Owner Occupied Housing Units: $250,000 to $299,999
+   415  HOOEXV20   Value of Owner Occupied Housing Units: $300,000 to $399,999
+   416  HOOEXV21   Value of Owner Occupied Housing Units: $400,000 to $499,999
+   417  HOOEXV22   Value of Owner Occupied Housing Units: $500,000 to $749,999
+   418  HOOEXV23   Value of Owner Occupied Housing Units: $750,000 to $999,999
+   419  HOOEXV24   Value of Owner Occupied Housing Units: $1,000,000 to $1,499,999
+   420  HOOEXV25   Value of Owner Occupied Housing Units: $1,500,000 to $1,999,999
+   421  HOOEXV26   Value of Owner Occupied Housing Units: $2,000,000 or more
+   422  RNTEXMED   Median Cash Rent
+   423  HOOEXMED   Median Value of Owner Occupied Housing Units
+   424  BUSCYEST   Total Establishments
+   425  BUSCYEMP   Total Employees
+   426  BUSCYDAYP  Daytime Population
+   427  ESTCYADMN  Establishments: Company Headquarters
+   428  EMPCYADMN  Employees: Company Headquarters
+   429  ESTCYAFF   Establishments: Agriculture, Forestry and Fishing
+   430  ESTCYAGRSV Establishments: Agricultural Services
+   431  ESTCYCOALM Establishments: Coal and Ore Mining
+   432  ESTCYOIL   Establishments: Oil and Gas
+   433  ESTCYGCON  Establishments: General Construction
+   434  ESTCYHCON  Establishments: Heavy Construction
+   435  ESTCYMFOOD Establishments: Food Manufacturing
+   436  ESTCYMTOB  Establishments: Tobacco Manufacturing
+   437  ESTCYMTXT  Establishments: Textile Mills
+   438  ESTCYMAPP  Establishments: Apparel and Textile Manufacturing
+   439  ESTCYMWOOD Establishments: Lumber and Wood Production
+   440  ESTCYMFURN Establishments: Furniture Manufacturing
+   441  ESTCYMPAPR Establishments: Paper Manufacturing
+   442  ESTCYMPUBL Establishments: Printing and Publishing
+   443  ESTCYMCHEM Establishments: Chemicals
+   444  ESTCYMPETL Establishments: Petroleum Refining
+   445  ESTCYMRUBB Establishments: Rubber and Plastics
+   446  ESTCYMLTHR Establishments: Leather Manufacturing
+   447  ESTCYMSTN  Establishments: Stone, Glass, and Concrete
+   448  ESTCYMMFAB Establishments: Metals Fabrication
+   449  ESTCYMEQMT Establishments: Machinery and Equipment Manufacturing
+   450  ESTCYTRNSP Establishments: Transportation
+   451  ESTCYTRAV  Establishments: Travel Services
+   452  ESTCYTRANV Establishments: Transport Services
+   453  ESTCYCOMM  Establishments: Communications
+   454  ESTCYUTIL  Establishments: Utilities
+   455  ESTCYWHLD  Establishments: Durables Wholesale
+   456  ESTCYWHLND Establishments: Non Durables Wholesale
+   457  ESTCYRBMAT Establishments: Building Materials, Hardware and Garden
+   458  ESTCYRGMER Establishments: General Merchandise Stores
+   459  ESTCYRFOOD Establishments: Food Markets
+   460  ESTCYRCONV Establishments: Convenience Stores
+   461  ESTCYROFD  Establishments: Other Food Stores
+   462  ESTCYRAUTO Establishments: Auto Dealers and Gas Stations
+   463  ESTCYRCLTH Establishments: Clothing Stores
+   464  ESTCYRFURN Establishments: Furniture Stores
+   465  ESTCYRHFRN Establishments: Home Furnishings
+   466  ESTCYRCOMP Establishments: Electronics and Computer Stores
+   467  ESTCYRMUS  Establishments: Music Stores
+   468  ESTCYRRST  Establishments: Restaurants
+   469  ESTCYROFS  Establishments: Other Food Service
+   470  ESTCYRBAR  Establishments: Bars
+   471  ESTCYRDRG  Establishments: Drug Stores
+   472  ESTCYRLIQ  Establishments: Liquor Stores
+   473  ESTCYRSPC  Establishments: Specialty Stores
+   474  ESTCYRCAT  Establishments: Catalog and Direct Sales
+   475  ESTCYBANKS Establishments: Banks and Financial Institutions
+   476  ESTCYINSCA Establishments: Insurance Carriers
+   477  ESTCYINSAG Establishments: Insurance Agents and Brokers
+   478  ESTCYREAL  Establishments: Real Estate
+   479  ESTCYHOTEL Establishments: Hotels and Lodging
+   480  ESTCYDRYCL Establishments: Dry Cleaning and Laundry
+   481  ESTCYBTY   Establishments: Beauty and Barber Shops
+   482  ESTCYOTHPS Establishments: Other Personal Service
+   483  ESTCYADVER Establishments: Advertising
+   484  ESTCYCOMPS Establishments: Computer Services
+   485  ESTCYOTHBS Establishments: Other Business Services
+   486  ESTCYAREP  Establishments: Auto Repair/Services
+   487  ESTCYMREP  Establishments: Miscellaneous Repair Services
+   488  ESTCYMOVIE Establishments: Motion Pictures
+   489  ESTCYENTRC Establishments: Entertainment and Recreation Services
+   490  ESTCYHLTHM Establishments: Health and Medical Services
+   491  ESTCYHOSP  Establishments: Hospitals
+   492  ESTCYLEGAL Establishments: Legal Services
+   493  ESTCYEDUC  Establishments: Primary and Secondary Education
+   494  ESTCYCOLL  Establishments: Colleges and Universities
+   495  ESTCYLIB   Establishments: Other Education and Libraries
+   496  ESTCYSOCSR Establishments: Social Services
+   497  ESTCYCHILD Establishments: Child Care Services
+   498  ESTCYMUSMS Establishments: Museums and Zoos
+   499  ESTCYMEMBO Establishments: Membership Organizations
+   500  ESTCYPROFS Establishments: Professional Services
+   501  ESTCYGOVT  Establishments: Government
+   502  ESTCYUNK   Establishments: Unclassified Establishments
+   503  EMPCYAFF   Employees: Agriculture, Forestry and Fishing
+   504  EMPCYAGRSV Employees: Agricultural Services
+   505  EMPCYCOALM Employees: Coal and Ore Mining
+   506  EMPCYOIL   Employees: Oil and Gas
+   507  EMPCYGCON  Employees: General Construction
+   508  EMPCYHCON  Employees: Heavy Construction
+   509  EMPCYMFOOD Employees: Food Manufacturing
+   510  EMPCYMTOB  Employees: Tobacco Manufacturing
+   511  EMPCYMTXT  Employees: Textile Mills
+   512  EMPCYMAPP  Employees: Apparel and Textile Manufacturing
+   513  EMPCYMWOOD Employees: Lumber and Wood Production
+   514  EMPCYMFURN Employees: Furniture Manufacturing
+   515  EMPCYMPAPR Employees: Paper Manufacturing
+   516  EMPCYMPUBL Employees: Printing and Publishing
+   517  EMPCYMCHEM Employees: Chemicals
+   518  EMPCYMPETL Employees: Petroleum Refining
+   519  EMPCYMRUBB Employees: Rubber and Plastics
+   520  EMPCYMLTHR Employees: Leather Manufacturing
+   521  EMPCYMSTN  Employees: Stone, Glass, and Concrete
+   522  EMPCYMMFAB Employees: Metals Fabrication
+   523  EMPCYMEQMT Employees: Machinery and Equipment Manufacturing
+   524  EMPCYTRNSP Employees: Transportation
+   525  EMPCYTRAV  Employees: Travel Services
+   526  EMPCYTRANV Employees: Transport Services
+   527  EMPCYCOMM  Employees: Communications
+   528  EMPCYUTIL  Employees: Utilities
+   529  EMPCYWHLD  Employees: Durables Wholesale
+   530  EMPCYWHLND Employees: Non Durables Wholesale
+   531  EMPCYRBMAT Employees: Building Materials, Hardware and Garden
+   532  EMPCYRGMER Employees: General Merchandise Stores
+   533  EMPCYRFOOD Employees: Food Markets
+   534  EMPCYRCONV Employees: Convenience Stores
+   535  EMPCYROFD  Employees: Other Food Stores
+   536  EMPCYRAUTO Employees: Auto Dealers and Gas Stations
+   537  EMPCYRCLTH Employees: Clothing Stores
+   538  EMPCYRFURN Employees: Furniture Stores
+   539  EMPCYRHFRN Employees: Home Furnishings
+   540  EMPCYRCOMP Employees: Electronics and Computer Stores
+   541  EMPCYRMUS  Employees: Music Stores
+   542  EMPCYRRST  Employees: Restaurants
+   543  EMPCYROFS  Employees: Other Food Service
+   544  EMPCYRBAR  Employees: Bars
+   545  EMPCYRDRG  Employees: Drug Stores
+   546  EMPCYRLIQ  Employees: Liquor Stores
+   547  EMPCYRSPC  Employees: Specialty Stores
+   548  EMPCYRCAT  Employees: Catalog and Direct Sales
+   549  EMPCYBANKS Employees: Banks and Financial Institutions
+   550  EMPCYINSCA Employees: Insurance Carriers
+   551  EMPCYINSAG Employees: Insurance Agents and Brokers
+   552  EMPCYREAL  Employees: Real Estate
+   553  EMPCYHOTEL Employees: Hotels and Lodging
+   554  EMPCYDRYCL Employees: Dry Cleaning and Laundry
+   555  EMPCYBTY   Employees: Beauty and Barber Shops
+   556  EMPCYOTHPS Employees: Other Personal Service
+   557  EMPCYADVER Employees: Advertising
+   558  EMPCYCOMPS Employees: Computer Services
+   559  EMPCYOTHBS Employees: Other Business Services
+   560  EMPCYAREP  Employees: Auto Repair/Services
+   561  EMPCYMREP  Employees: Miscellaneous Repair Services
+   562  EMPCYMOVIE Employees: Motion Pictures
+   563  EMPCYENTRC Employees: Entertainment and Recreation Services
+   564  EMPCYHLTHM Employees: Health and Medical Services
+   565  EMPCYHOSP  Employees: Hospitals
+   566  EMPCYLEGAL Employees: Legal Services
+   567  EMPCYEDUC  Employees: Primary and Secondary Education
+   568  EMPCYCOLL  Employees: Colleges and Universities
+   569  EMPCYLIB   Employees: Other Education and Libraries
+   570  EMPCYSOCSR Employees: Social Services
+   571  EMPCYCHILD Employees: Child Care Services
+   572  EMPCYMUSMS Employees: Museums and Zoos
+   573  EMPCYMEMBO Employees: Membership Organizations
+   574  EMPCYPROFS Employees: Professional Services
+   575  EMPCYGOVT  Employees: Government
+   576  EMPCYUNK   Employees: Unclassified Establishments
+   577  XCYTOTAL   Total Expenditure
+   578  XCYRETAIL  Retail Expenditure
+   579  XCYNRETAIL Non-Retail Expenditure
+   580  XCYAPP     Apparel
+   581  XCYBEV     Alcoholic Beverages
+   582  XCYCON     Contributions
+   583  XCYEDU     Education
+   584  XCYENT     Entertainment
+   585  XCYFAH     Food Away From Home
+   586  XCYGRO     Grocery
+   587  XCYHEQ     Household Furnishings and Equipment
+   588  XCYHLT     Health Care
+   589  XCYHOP     Household Operations
+   590  XCYMIS     Miscellaneous Expenses
+   591  XCYPCR     Personal Care
+   592  XCYSHE     Shelter
+   593  XCYTAX     Tax and Retirement
+   594  XCYTOB     Tobacco and Related
+   595  XCYUTL     Utilities
+   596  XCYVEH     Transportation
+
+     2  AGECY0004=AGECYM0004+AGECYF0004
+     3  AGECY0509=AGECYM0509+AGECYF0509
+     4  AGECY1014=AGECYM1014+AGECYF1014
+     5  AGECY1519=AGECYM1519+AGECYF1519
+     6  AGECY2024=AGECYM2024+AGECYF2024
+     7  AGECY2529=AGECYM2529+AGECYF2529
+     8  AGECY3034=AGECYM3034+AGECYF3034
+     9  AGECY3539=AGECYM3539+AGECYF3539
+    10  AGECY4044=AGECYM4044+AGECYF4044
+    11  AGECY4549=AGECYM4549+AGECYF4549
+    12  AGECY5054=AGECYM5054+AGECYF5054
+    13  AGECY5559=AGECYM5559+AGECYF5559
+    14  AGECY6064=AGECYM6064+AGECYF6064
+    15  AGECY6569=AGECYM6569+AGECYF6569
+    16  AGECY7074=AGECYM7074+AGECYF7074
+    17  AGECY7579=AGECYM7579+AGECYF7579
+    18  AGECY8084=AGECYM8084+AGECYF8084
+    19  AGECYGT85=AGECYMGT85+AGECYFGT85
+    20  AGECYM0004=SUM(AGDCYMLT1:AGDCYM4)
+    21  AGECYM0509=SUM(AGDCYM5:AGDCYM9)
+    22  AGECYM1014=SUM(AGDCYM10:AGDCYM14)
+    23  AGECYM1519=SUM(AGDCYM15:AGDCYM19)
+    24  AGECYM2024=AGDCYM2024
+    25  AGECYM2529=AGDCYM2529
+    26  AGECYM3034=AGDCYM3034
+    27  AGECYM3539=AGDCYM3539
+    28  AGECYM4044=AGDCYM4044
+    29  AGECYM4549=AGDCYM4549
+    30  AGECYM5054=AGDCYM5054
+    31  AGECYM5559=AGDCYM5559
+    32  AGECYM6064=AGDCYM6064
+    33  AGECYM6569=AGDCYM6569
+    34  AGECYM7074=AGDCYM7074
+    35  AGECYM7579=AGDCYM7579
+    36  AGECYM8084=AGDCYM8084
+    37  AGECYMGT85=AGDCYMGT85
+    38  AGECYF0004=SUM(AGDCYFLT1:AGDCYF4)
+    39  AGECYF0509=SUM(AGDCYF5:AGDCYF9)
+    40  AGECYF1014=SUM(AGDCYF10:AGDCYF14)
+    41  AGECYF1519=SUM(AGDCYF15:AGDCYF19)
+    42  AGECYF2024=AGDCYF2024
+    43  AGECYF2529=AGDCYF2529
+    44  AGECYF3034=AGDCYF3034
+    45  AGECYF3539=AGDCYF3539
+    46  AGECYF4044=AGDCYF4044
+    47  AGECYF4549=AGDCYF4549
+    48  AGECYF5054=AGDCYF5054
+    49  AGECYF5559=AGDCYF5559
+    50  AGECYF6064=AGDCYF6064
+    51  AGECYF6569=AGDCYF6569
+    52  AGECYF7074=AGDCYF7074
+    53  AGECYF7579=AGDCYF7579
+    54  AGECYF8084=AGDCYF8084
+    55  AGECYFGT85=AGDCYFGT85
+    56  AGECYMED=JOINTMEDIAN(AGDCYMLT1:AGDCYMGT85,AGDCYFLT1:AGDCYFGT85)
+    57  AGECYMEDM=MEDIAN(AGDCYMLT1:AGDCYMGT85)
+    58  AGECYMEDF=MEDIAN(AGDCYFLT1:AGDCYFGT85)
+    60  HISCYNONH=POPCY-HISCYHISP
+    83  POPCYNFM=POPCY-POPCYFAM-POPCYGRP
+    88  POPCYGT15=SUM(MARCYNEVER:MARCYDIVOR)
+    94  POPCYGT25=SUM(EDUCYLTGR9:EDUCYGRAD)
+   102  LBFCYPOP16=SUM(LBFCYMARM:LBFCYFNLF)
+   103  LBFCYMPOP1=SUM(AGDCYM16:AGDCYMGT85)
+   104  LBFCYFPOP1=SUM(AGDCYF16:AGDCYFGT85)
+   105  LBFCYARM=LBFCYMARM+LBFCYFARM
+   106  LBFCYEMPL=LBFCYMEMPL+LBFCYFEMPL
+   107  LBFCYUNEM=LBFCYMUNEM+LBFCYFUNEM
+   108  LBFCYNLF=LBFCYMNLF+LBFCYFNLF
+   129  TVWEXMED=MEDIAN(TVWEXLT5:TVWEXGT90)
+   161  OCCEXMGMT=OCCEXMMGMT+OCCEXFMGMT
+   162  OCCEXBUSF=OCCEXMBUSF+OCCEXFBUSF
+   163  OCCEXCOMP=OCCEXMCOMP+OCCEXFCOMP
+   164  OCCEXARCH=OCCEXMARCH+OCCEXFARCH
+   165  OCCEXSCI=OCCEXMSCI+OCCEXFSCI
+   166  OCCEXCOMM=OCCEXMCOMM+OCCEXFCOMM
+   167  OCCEXLEG=OCCEXMLEG+OCCEXFLEG
+   168  OCCEXEDUC=OCCEXMEDUC+OCCEXFEDUC
+   169  OCCEXARTS=OCCEXMARTS+OCCEXFARTS
+   170  OCCEXHLT1=OCCEXMHLT1+OCCEXFHLT1
+   171  OCCEXHLT2=OCCEXMHLT2+OCCEXFHLT2
+   172  OCCEXHLT3=OCCEXMHLT3+OCCEXFHLT3
+   173  OCCEXFIRE=OCCEXMFIRE+OCCEXFFIRE
+   174  OCCEXCOPS=OCCEXMCOPS+OCCEXFCOPS
+   175  OCCEXFPRP=OCCEXMFPRP+OCCEXFFPRP
+   176  OCCEXCLNG=OCCEXMCLNG+OCCEXFCLNG
+   177  OCCEXPCAR=OCCEXMPCAR+OCCEXFPCAR
+   178  OCCEXSALE=OCCEXMSALE+OCCEXFSALE
+   179  OCCEXOFF=OCCEXMOFF+OCCEXFOFF
+   180  OCCEXFARM=OCCEXMFARM+OCCEXFFARM
+   181  OCCEXCNEX=OCCEXMCNEX+OCCEXFCNEX
+   182  OCCEXINST=OCCEXMINST+OCCEXFINST
+   183  OCCEXPROD=OCCEXMPROD+OCCEXFPROD
+   184  OCCEXTRAN=OCCEXMTRAN+OCCEXFTRAN
+   185  OCCEXMATM=OCCEXMMATM+OCCEXFMATM
+   186  INDEXAGRI=INDEXMAGRI+INDEXFAGRI
+   187  INDEXMINE=INDEXMMINE+INDEXFMINE
+   188  INDEXCONS=INDEXMCONS+INDEXFCONS
+   189  INDEXMMFG=INDEXMMMFG+INDEXFMMFG
+   190  INDEXWTRA=INDEXMWTRA+INDEXFWTRA
+   191  INDEXRTRA=INDEXMRTRA+INDEXFRTRA
+   192  INDEXTRAN=INDEXMTRAN+INDEXFTRAN
+   193  INDEXUTIL=INDEXMUTIL+INDEXFUTIL
+   194  INDEXINFO=INDEXMINFO+INDEXFINFO
+   195  INDEXFIN=INDEXMFIN+INDEXFFIN
+   196  INDEXREAL=INDEXMREAL+INDEXFREAL
+   197  INDEXPSRV=INDEXMPSRV+INDEXFPSRV
+   198  INDEXMGMT=INDEXMMGMT+INDEXFMGMT
+   199  INDEXADS=INDEXMADS+INDEXFADS
+   200  INDEXEDUC=INDEXMEDUC+INDEXFEDUC
+   201  INDEXHLTH=INDEXMHLTH+INDEXFHLTH
+   202  INDEXARTS=INDEXMARTS+INDEXFARTS
+   203  INDEXFOOD=INDEXMFOOD+INDEXFFOOD
+   204  INDEXOTHR=INDEXMOTHR+INDEXFOTHR
+   205  INDEXPUBA=INDEXMPUBA+INDEXFPUBA
+   206  CLWEXPRV=CLWEXMPRV+CLWEXFPRV
+   207  CLWEXSLF=CLWEXMSLF+CLWEXFSLF
+   208  CLWEXNPF=CLWEXMNPF+CLWEXFNPF
+   209  CLWEXLGV=CLWEXMLGV+CLWEXFLGV
+   210  CLWEXSGV=CLWEXMSGV+CLWEXFSGV
+   211  CLWEXFGV=CLWEXMFGV+CLWEXFFGV
+   212  CLWEXSLFX=CLWEXMSLFX+CLWEXFSLFX
+   213  CLWEXUNP=CLWEXMUNP+CLWEXFUNP
+   216  HHDCYNFM=HHDCY-HHDCYFAM
+   230  HHDCYAVESZ=POPCYFAM+POPCYNFM/HHDCY
+   231  FAMCYAVESZ=POPCYFAM/HHDCYFAM
+   232  NFMCYAVESZ=POPCYNFM/HHDCYNFM
+   241  HHDCYMEDAG=MEDIAN(HAGCY1524:HAGCYGT85)
+   242  VPHCY1=VPHCYO1+VPHCYR1
+   243  VPHCY2=VPHCYO2+VPHCYR2
+   244  VPHCY3=VPHCYO3+VPHCYR3
+   245  VPHCY4=VPHCYO4+VPHCYR4
+   246  VPHCY5=VPHCYO5+VPHCYR5
+   247  VPHCYAVE=VAVCYOTOT+VAVCYRTOT/HHDCY
+   271  LNICYNENG=SUM(LNIEXSPNIS:LNIEXOTHN)
+   272  LNICYENGP=LNIEXSPNN+LNIEXIUEN+LNIEXASNN+LNIEXOTHN
+   273  LNICYISOL=LNIEXSPNIS+LNIEXIEUIS+LNIEXASNIS+LNIEXOTHIN
+   276  INCCYAGGNF=INCCYAGGHD-INCCYAGGFA
+   277  INCCYAGGGP=INCCYAGG-INCCYAGGHD
+   278  INCCYPCAP=INCCYAGG/POPCY
+   279  INCCYAVEHH=INCCYAGGFA+INCCYAGGNF/HHDCY
+   280  INCCYAVEFA=INCCYAGGFA/HHDCYFAM
+   281  INCCYAVENF=INCCYAGGNF/HHDCYNFM
+   282  INCCYMEDHH=MEDIAN(HINCYLT10:HINCYGT200)
+   283  INCCYMEDFA=MEDIAN(FINCYLT10:FINCYGT200)
+   284  INCCYMEDNF=MEDIAN(NINCYLT10:NINCYGT200)
+   337  HINCYMED24=MEDIAN(HINCYA2401:HINCYA2416)
+   338  HINCYMED25=MEDIAN(HINCYA2501:HINCYA2516)
+   339  HINCYMED35=MEDIAN(HINCYA3501:HINCYA3516)
+   340  HINCYMED45=MEDIAN(HINCYA4501:HINCYA4516)
+   341  HINCYMED55=MEDIAN(HINCYA5501:HINCYA5516)
+   342  HINCYMED65=MEDIAN(HINCYA6501:HINCYA6516)
+   343  HINCYMED75=MEDIAN(HINCYA7501:HINCYA7516)
+   346  DWLCYOCCUP=DWLCY-DWLCYVACNT
+   348  DWLCYOWNED=DWLCY-DWLCYVACNT-DWLCYRENT
+   349  YBTEX1019=YBTEXO1019+YBTEXR1019
+   350  YBTEX20UP=YBTEXO20UP+YBTEXR20UP
+   351  YBTEX0009=YBTEXO0009+YBTEXR0009
+   352  YBTEX9099=YBTEXO9099+YBTEXR9099
+   353  YBTEX8089=YBTEXO8089+YBTEXR8089
+   354  YBTEX7079=YBTEXO7079+YBTEXR7079
+   355  YBTEX6069=YBTEXO6069+YBTEXR6069
+   356  YBTEX5059=YBTEXO5059+YBTEXR5059
+   357  YBTEX4049=YBTEXO4049+YBTEXR4049
+   358  YBTEX39PR=YBTEXO39PR+YBTEXR39PR
+   359  HUSEX1DET=HUSEXO1DET+HUSEXR1DET
+   360  HUSEX1ATT=HUSEXO1ATT+HUSEXR1ATT
+   361  HUSEX2=HUSEXO2+HUSEXR2
+   362  HUSEX0304=HUSEXO0304+HUSEXR0304
+   363  HUSEX0509=HUSEXO0509+HUSEXR0509
+   364  HUSEX1019=HUSEXO1019+HUSEXR1019
+   365  HUSEX2049=HUSEXO2049+HUSEXR2049
+   366  HUSEXGT50=HUSEXOGT50+HUSEXRGT50
+   367  HUSEXMOB=HUSEXOMOB+HUSEXRMOB
+   368  HUSEXBOAT=HUSEXOBOAT+HUSEXRBOAT
+   420  RNTEXMED=MEDIAN(RNTEX01:RNTEX24)
+   421  HOOEXMED=MEDIAN(HOOEXV01:HOOEXV26)
+   424  BUSCYDAYP=BUSCYEMP+SUM(AGDCY1:AGDCY15)+LBFCYNLF
+   578  XCYAPP=SUM(XCYAPP0101:XCYAPP0904)
+   579  XCYBEV=SUM(XCYBEV0101:XCYBEV04)
+   580  XCYCON=SUM(XCYCON01:XCYCON06)
+   581  XCYEDU=SUM(XCYEDU0101:XCYEDU03)
+   582  XCYENT=SUM(XCYENT0101:XCYENT10)
+   583  XCYFAH=SUM(XCYFAH0101:XCYFAH06)
+   584  XCYGRO=SUM(XCYGRO0101:XCYGRO1808)
+   585  XCYHEQ=SUM(XCYHEQ0101:XCYHEQ1002)
+   586  XCYHLT=XCYHLT01+XCYHLT02+XCYHLT03+XCYHLT04+XCYHLT05
+   587  XCYHOP=SUM(XCYHOP0101:XCYHOP0506)
+   588  XCYMIS=SUM(XCYMIS01:XCYMIS06)
+   589  XCYPCR=SUM(XCYPCR0101:XCYPCR05)
+   590  XCYSHE=SUM(XCYSHE0101:XCYSHE0502)
+   591  XCYTAX=XCYTAX01+XCYTAX02+XCYTAX03+XCYTAX04
+   592  XCYTOB=SUM(XCYTOB01:XCYTOB03)
+   593  XCYUTL=SUM(XCYUTL01:XCYUTL0503)
+   594  XCYVEH=SUM(XCYVEH0101:XCYVEH13)
+
+
+END NOTES
+
+1. Daytime population consists of the persons employed in the study area, children aged 0-15, and persons 16+ not employed (civilian or armed forces)
+2. All dollar related data - income, expenditures, rent, housing values, retail sales, etc. - are reported in current not constant dollars.
+3. Business establishment data: Devonshire Associates dmPlus.
+
+
+REFERENCES
+
+     https://appliedgeographic.com/Data/Methodologies/Estimates and Projections.pdf
+     https://appliedgeographic.com/Data/Methodologies/Business Counts.pdf
+     https://appliedgeographic.com/Data/Methodologies/Retail.pdf
+
+Records written: 32037
+Elapsed time   : 14.70 seconds, 2178.79 records/second
+
+SnapShot 3.00 Build  1 (1/29/2026 01:47 PM)

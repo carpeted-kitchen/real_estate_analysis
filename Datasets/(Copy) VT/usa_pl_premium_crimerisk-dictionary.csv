@@ -1,0 +1,24 @@
+SEQ,VARIABLE,DESCRIPTION,VINTAGE,UNIT,TYPE,AGGREGATION_TYPE,WEIGHT_FIELD,UNIVERSE,MEDIAN_UBOUND,NATIVE_GEO
+2,NAME,Geographic Area Name,,String,,,,,,
+3,POPCY,Population,2025,Persons,Numeric,Sum,,,,Census Block
+4,CRMCYTOTC,Total Crime,2025,Index,Numeric,Weighted Sum,POPCY,,,Census Block
+5,CRMCYPERC,Personal Crime,2025,Index,Numeric,Weighted Sum,POPCY,,,Census Block
+6,CRMCYMURD,Murder,2025,Index,Numeric,Weighted Sum,POPCY,,,Census Block
+7,CRMCYRAPE,Rape,2025,Index,Numeric,Weighted Sum,POPCY,,,Census Block
+8,CRMCYROBB,Robbery,2025,Index,Numeric,Weighted Sum,POPCY,,,Census Block
+9,CRMCYASST,Assault,2025,Index,Numeric,Weighted Sum,POPCY,,,Census Block
+10,CRMCYPROC,Property Crime,2025,Index,Numeric,Weighted Sum,POPCY,,,Census Block
+11,CRMCYBURG,Burglary,2025,Index,Numeric,Weighted Sum,POPCY,,,Census Block
+12,CRMCYLARC,Larceny,2025,Index,Numeric,Weighted Sum,POPCY,,,Census Block
+13,CRMCYMVEH,Motor Vehicle Theft,2025,Index,Numeric,Weighted Sum,POPCY,,,Census Block
+14,POPPY,Population,2030,Persons,Numeric,Sum,,,,Census Block
+15,CRMPYTOTC,Total Crime,2030,Index,Numeric,Weighted Sum,POPPY,,,Census Block
+16,CRMPYPERC,Personal Crime,2030,Index,Numeric,Weighted Sum,POPPY,,,Census Block
+17,CRMPYMURD,Murder,2030,Index,Numeric,Weighted Sum,POPPY,,,Census Block
+18,CRMPYRAPE,Rape,2030,Index,Numeric,Weighted Sum,POPPY,,,Census Block
+19,CRMPYROBB,Robbery,2030,Index,Numeric,Weighted Sum,POPPY,,,Census Block
+20,CRMPYASST,Assault,2030,Index,Numeric,Weighted Sum,POPPY,,,Census Block
+21,CRMPYPROC,Property Crime,2030,Index,Numeric,Weighted Sum,POPPY,,,Census Block
+22,CRMPYBURG,Burglary,2030,Index,Numeric,Weighted Sum,POPPY,,,Census Block
+23,CRMPYLARC,Larceny,2030,Index,Numeric,Weighted Sum,POPPY,,,Census Block
+24,CRMPYMVEH,Motor Vehicle Theft,2030,Index,Numeric,Weighted Sum,POPPY,,,Census Block

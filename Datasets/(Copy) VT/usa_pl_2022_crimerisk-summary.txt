@@ -1,0 +1,41 @@
+SNAPSHOT PRODUCTION SUMMARY
+Date: 02-25-2026
+Time: 12:42:27
+Library Version:  25b_1104
+Template:         d:\snapshot2025b\var files\historical\2022_crimerisk.rpt
+Geographic Level: [PL] Census Place (2020)
+
+FIELD REFERENCE
+
+Number  Fields     Description
+
+     1  ID         Geographic Area Code
+     2  NAME       Geographic Area Name
+     3  CRMA2PERC  Personal Crime
+     4  CRMA2MURD  Murder
+     5  CRMA2RAPE  Rape
+     6  CRMA2ROBB  Robbery
+     7  CRMA2ASST  Assault
+     8  CRMA2PROC  Property Crime
+     9  CRMA2BURG  Burglary
+    10  CRMA2LARC  Larceny
+    11  CRMA2MVEH  Motor Vehicle Theft
+    12  CRMA2TOTC  Total Crime
+
+FORMULA REFERENCE
+
+No library or user formulas
+
+END NOTES
+
+1. Index values are 100 based, with the national average=100.  A value of 50 indicates one-half the national average, and a value of 200 indicates twice the national average.
+
+
+REFERENCES
+
+     https://appliedgeographic.com/Data/Methodologies/CrimeRisk.pdf
+
+Records written: 32037
+Elapsed time   : 0.34 seconds, 94226.47 records/second
+
+SnapShot 3.00 Build  1 (1/29/2026 01:47 PM)
