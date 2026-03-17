@@ -1,12 +1,3 @@
-SEQ,VARIABLE,DESCRIPTION,VINTAGE,UNIT,TYPE,AGGREGATION_TYPE,WEIGHT_FIELD,UNIVERSE,MEDIAN_UBOUND,NATIVE_GEO
-2,NAME,Geographic Area Name,,String,,,,,,
-3,CRMA2PERC,Personal Crime,2022,Index,Numeric,Weighted Sum,HHDA2RSK,,,Block Group
-4,CRMA2MURD,Murder,2022,Index,Numeric,Weighted Sum,HHDA2RSK,,,Block Group
-5,CRMA2RAPE,Rape,2022,Index,Numeric,Weighted Sum,HHDA2RSK,,,Block Group
-6,CRMA2ROBB,Robbery,2022,Index,Numeric,Weighted Sum,HHDA2RSK,,,Block Group
-7,CRMA2ASST,Assault,2022,Index,Numeric,Weighted Sum,HHDA2RSK,,,Block Group
-8,CRMA2PROC,Property Crime,2022,Index,Numeric,Weighted Sum,HHDA2RSK,,,Block Group
-9,CRMA2BURG,Burglary,2022,Index,Numeric,Weighted Sum,HHDA2RSK,,,Block Group
-10,CRMA2LARC,Larceny,2022,Index,Numeric,Weighted Sum,HHDA2RSK,,,Block Group
-11,CRMA2MVEH,Motor Vehicle Theft,2022,Index,Numeric,Weighted Sum,HHDA2RSK,,,Block Group
-12,CRMA2TOTC,Total Crime,2022,Index,Numeric,Weighted Sum,HHDA2RSK,,,Block Group
+version https://git-lfs.github.com/spec/v1
+oid sha256:9854fb46f6073ce424dd0ccda689f4e48b796e3c8f5a00f5769096386abf44a7
+size 941
