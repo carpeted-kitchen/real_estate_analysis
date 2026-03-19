@@ -75,7 +75,7 @@ updated = []
 #print(r.json())
 
 data_df = pd.read_csv(
-    "datasets/usa-real-estate-dataset/versions/25/realtor-data.zip.csv",
+    "Datasets/realtor-data.zip.csv",
     dtype={"zip_code": str},
 )
 data_df = data_df[(data_df["state"] != "Puerto Rico") & (data_df["state"] != "Virgin Islands") 
@@ -83,21 +83,21 @@ data_df = data_df[(data_df["state"] != "Puerto Rico") & (data_df["state"] != "Vi
 data_df = data_df.dropna(subset=['brokered_by', 'status', 'price','bed','bath','acre_lot','street','city','state','zip_code','house_size'])
 
 crime_risk_df = pd.read_csv(
-    filepath_or_buffer="datasets/(Copy) VT/usa_zi_premium_crimerisk.csv",
+    filepath_or_buffer="Datasets/(Copy) VT/usa_zi_premium_crimerisk.csv",
     dtype={"ID": str},
 )
 crime_risk_df.set_index("ID", inplace=True)
 
 crime_risk_stats_df = pd.read_csv(
-    "datasets/(Copy) VT/usa_zi_2024 crimerisk-statistics.csv"
+    "Datasets/(Copy) VT/usa_zi_2024 crimerisk-statistics.csv"
 )
 
 zi_base_current_df = pd.read_csv(
-    "datasets/(Copy) VT/usa_zi_base_currentyear.csv", dtype={"ID": str}
+    "Datasets/(Copy) VT/usa_zi_base_currentyear.csv", dtype={"ID": str}
 )
 zi_base_current_df.set_index("ID", inplace=True)
 base_current_stats_df = pd.read_csv(
-    "datasets/(Copy) VT/usa_zi_base_currentyear-statistics.csv"
+    "Datasets/(Copy) VT/usa_zi_base_currentyear-statistics.csv"
 )
 base_current_stats_df.set_index("VARIABLE", inplace=True)
 max_total_crime = crime_risk_stats_df.loc[9].MAXIMUM
@@ -112,14 +112,14 @@ sq_ft_max = data_df.house_size.max()
 sq_ft_min = data_df.house_size.min()
 
 temp_stat_df = pd.read_csv(
-    "datasets/(Copy) VT/usa_zi_premium_environment-statistics.csv"
+    "Datasets/(Copy) VT/usa_zi_premium_environment-statistics.csv"
 )
 temp_stat_df.set_index("VARIABLE", inplace=True)
 temp_av_max = temp_stat_df.loc["TMPAVEANN"].MAXIMUM
 temp_av_min = temp_stat_df.loc["TMPAVEANN"].MINIMUM
 
 temp_df = pd.read_csv(
-    "datasets/(Copy) VT/usa_zi_premium_environment.csv", dtype={"ID": str}
+    "Datasets/(Copy) VT/usa_zi_premium_environment.csv", dtype={"ID": str}
 )
 temp_df.set_index("ID", inplace=True)
 
@@ -216,7 +216,7 @@ for idx, row in zi_base_current_df.iterrows():
             data_df.at[idx,"weather"] = avg_temp
             data_df.at[idx, "Suitability"] = total_weighted_score
 
-data_df.to_csv("Suitability_score_house.csv")
+#data_df.to_csv("Suitability_score_house.csv")
 lin_reg = LinearRegression()
 # remove 
 X = data_df.drop(["status", "city", "brokered_by", "zip_code", 'prev_sold_date'], axis='columns')
@@ -226,3 +226,8 @@ train_x, test_x, train_y, test_y = train_test_split(X,Y,test_size=0.3, random_st
 lin_reg.fit(train_x, train_y)
 y_pred_lin = lin_reg.predict(test_x)
 
+root_mse = root_mean_squared_error(test_y, y_pred_lin)
+r2_lin_pred = r2_score(test_y, y_pred_lin)
+print("Score report:")
+print("Root MSE: ", root_mse)
+print("R-squared: ", r2_lin_pred)
