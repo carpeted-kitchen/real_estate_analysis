@@ -1,0 +1,10 @@
+import streamlit as st
+
+st.title("Retirement Home Finder")
+# Create dropdown menus to select preferences
+price = st.selectbox("Select a price range:", ['$0 - $100,000', '$100,000 - $500,000', '$500,000 - $1,000,000'])
+safety = st.selectbox("Select a safety range:", ['low', 'medium', 'high'])
+climate = st.selectbox("Select a climate range:", ['warm', 'moderate', 'cool'])
+zipcode = st.text_input("Enter your ideal zipcode:")
+
+st.subheader("Results")
