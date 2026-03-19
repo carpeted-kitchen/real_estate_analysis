@@ -6,6 +6,7 @@ from sklearn.linear_model import LinearRegression, Lasso
 from sklearn.metrics import r2_score,mean_squared_error, root_mean_squared_error
 from sklearn.model_selection import train_test_split
 import numpy as np
+from scipy import stats
 
 home_price_wt = 0.5
 weather_wt = 0.3
@@ -25,6 +26,8 @@ y_pred_lin = lin_reg.predict(test_x)
 
 root_mse = root_mean_squared_error(test_y, y_pred_lin)
 r2_lin_pred = r2_score(test_y, y_pred_lin)
+res = stats.spearmanr(test_y, y_pred_lin)
 print("Score report:")
 print("Root MSE: ", root_mse)
 print("R-squared: ", r2_lin_pred)
+print("Spearman correlation: ", res.pvalue)
