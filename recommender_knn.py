@@ -56,10 +56,10 @@ pred_y = []
 #print(test.head())
 with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        for idx,row in test.iloc[:1000].iterrows():
+        for idx,row in test.iloc[:10000].iterrows():
 
             predicted_score = predict_score(row)
             pred_y.append(predicted_score)
-test_y2 = test_y.iloc[0:1000]
+test_y2 = test_y.iloc[0:10000]
 spearman = stats.spearmanr(pred_y, test_y2)
 print("Knn Spearman Correlation:", spearman)
