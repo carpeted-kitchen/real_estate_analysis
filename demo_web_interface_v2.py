@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from sklearn.linear_model import LinearRegression
+from Recommender_mod import knn,train_knn, predict_score
 
 # Load data from your own file path
 df = pd.read_csv("/Users/katherineskarda/PycharmProjects/IntroToAI/real_estate_analysis/Suitability_score_house.csv")
