@@ -15,7 +15,7 @@ training_data = pd.read_csv("Suitability_score_house.csv")
 K = 10
 X = training_data.drop(["status", "city", "brokered_by", 'prev_sold_date'], axis='columns')
 Y = training_data["Suitability"]
-train_x, test_x, train_y, test_y = train_test_split(X,Y,test_size=0.4, random_state=42, shuffle=True)
+train_x, test_x, train_y, test_y = train_test_split(X,Y,test_size=0.5, random_state=42, shuffle=True)
 
 train = train_x
 print(train.head())
@@ -51,15 +51,32 @@ def predict_score(item):
         avg = avg + prop["Suitability"]
     avg = avg/K
     return avg
-pred_y = []
+#pred_y = []
 
 #print(test.head())
-with warnings.catch_warnings():
+def score_pred(knn : NearestNeighbors, items):
+    pred_y = []
+    with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        for idx,row in test.iloc[:10000].iterrows():
+        for idx, row in items.iterrows():
+            k_nbrs = knn.kneighbors([row], return_distance = True)
+            neighbors_idxs = k_nbrs[1][0]
+            avg = 0
+            for i in neighbors_idxs:
+                prop = train.iloc[i]
+                avg = avg + prop["Suitability"]
 
-            predicted_score = predict_score(row)
-            pred_y.append(predicted_score)
-test_y2 = test_y.iloc[0:10000]
-spearman = stats.spearmanr(pred_y, test_y2)
+            avg = avg / len(neighbors_idxs)
+            pred_y.append(avg)
+    return pred_y
+#with warnings.catch_warnings():
+#        warnings.simplefilter("ignore")
+#        for idx,row in test.iloc[:10000].iterrows():
+
+#            predicted_score = predict_score(row)
+#            pred_y.append(predicted_score)
+test_x2 = test_x.iloc[0:100]
+y_predict = score_pred(knneigh, test_x2)
+test_y2 = test_y.iloc[0:100]
+spearman = stats.spearmanr(y_predict, test_y2)
 print("Knn Spearman Correlation:", spearman)
