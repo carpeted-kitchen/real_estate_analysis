@@ -15,10 +15,16 @@ import numpy as np
 
 searchplace = "New York, NY"  # Can enter state, region, city, zip
 
-home_price_wt = 0.5
-weather_wt = 0.3
-crime_wt = 0.1
+#QoL is 27% of which 30% is based on crime rates and 25%  on weather
+
+home_price_wt = 0.24
+wthr_temp_wt = 0.07
+wthr_extm_wt = 0.0405
+les_wt = 0.027
+crime_wt = 0.081
 sq_ft_wt = 0.1
+#Taxes weight
+tax_wt = 0.16
 
 url = "https://health.usnews.com/best-hospitals/search-data?specialty_id=IHQCANC&page=1"
 
@@ -146,7 +152,7 @@ def calculatesuitability(tablerow):
     avg_temp = temp_df.loc[zipcode].TMPAVEANN
     temp_weighted_score = (
         (avg_temp - temp_av_min) / (temp_av_max - temp_av_min)
-    ) * weather_wt
+    ) * wthr_temp_wt
 
     # Get crime rate total
     total_crime = crime_risk_df.loc[zipcode].CRMPYTOTC
@@ -189,7 +195,7 @@ for idx, row in zi_base_current_df.iterrows():
         avg_temp = temp_df.loc[zipcode].TMPAVEANN
         temp_weighted_score = (
             (avg_temp - temp_av_min) / (temp_av_max - temp_av_min)
-        ) * weather_wt
+        ) * wthr_temp_wt
         total_crime = crime_risk_df.loc[zipcode].CRMPYTOTC
         crime_weighted_score = (
             (max_total_crime - total_crime) / (max_total_crime - min_total_crime)
