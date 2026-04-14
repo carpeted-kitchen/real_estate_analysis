@@ -56,32 +56,43 @@ base_current_stats_df = pd.read_csv(
 )
 
 prop_scored = []
-
-for idx, row in zi_base_current_df.loc["01001":"01008"].iterrows():
+street_ids = []
+for idx, row in zi_base_current_df.loc["01001":"77493"].iterrows():
     curr_zip = idx
     #print out zipcode
     print("Zipcode: ", curr_zip)
     #Call requests.get
     req_url = "https://api.livabilityindex.aarp.org/api/features/zip/" + curr_zip + "/scores"
     req_result = requests.get(req_url, timeout=60)
-    print("Get a result: ", req_result.status_code)
+    #print("Get a result: ", req_result.status_code)
     result_json = req_result.json()
     returned_results = result_json["result"][0]
-    returned_score = returned_results["scores"]
-    houses_at_zip = data_df.loc[data_df["zip_code"] == curr_zip]
-    for idx, house in houses_at_zip.iterrows():
-        livability_weighted_score = returned_score["score_prox"]
-        house_price = house.price
-        price_weighted_score = (
-            (max_price - house_price) / (max_price - min_price)
-        )
-        sq_footage = house.house_size
-        footage_weighted_score = (
-            (max_sq_ft - sq_footage) / (max_sq_ft - min_sq_ft)
-        )
-    #add up the scores
-    total_score = (price_weighted_score + footage_weighted_score +
-                   returned_score['score_engage'] + returned_score['score_env'] + returned_score['score_health']
-                   + returned_score['score_house'] + returned_score['score_opp'] + returned_score['score_trans']) / 8
-    prop_scored.append(total_score)
+    #print("Object type: ", type(returned_results))
+    if (req_result.status_code == 200) and (returned_results != None):
+        
+        
+        returned_score = returned_results["scores"]
+        houses_at_zip = data_df.loc[data_df["zip_code"] == curr_zip]
+        for idx, house in houses_at_zip.iterrows():
+            livability_weighted_score = returned_score["score_prox"]
+            house_price = house.price
+            price_weighted_score = (
+                (max_price - house_price) / (max_price - min_price)
+            )
+            sq_footage = house.house_size
+            footage_weighted_score = (
+                (max_sq_ft - sq_footage) / (max_sq_ft - min_sq_ft)
+            )
+            street_ids.append(house.street)
+        #add up the scores
+        total_score = (price_weighted_score + footage_weighted_score +
+                    returned_score['score_engage'] + returned_score['score_env'] + returned_score['score_health']
+                    + returned_score['score_house'] + returned_score['score_opp'] + returned_score['score_trans']) / 8
+        prop_scored.append(total_score)
+    else:
+        prop_scored.append(50)
     
+#Wrte these scres to a .csv file
+score_df = pd.DataFrame({"Street" : street_ids,
+                         "score" : prop_scored})
+score_df.to_csv("aarp_property_scores.csv")
