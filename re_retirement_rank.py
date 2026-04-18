@@ -221,7 +221,7 @@ for idx, row in zi_base_current_df.iterrows():
                 + footage_weighted_score
                 + crime_weighted_score
                 + temp_weighted_score + weather_rsk
-            )
+            )/5
             data_df.at[idx,"weather_risk"] = weather_rsk
             data_df.at[idx,"crime_risk"] =crime
             data_df.at[idx,"crime"] = total_crime
