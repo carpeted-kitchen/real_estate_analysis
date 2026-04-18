@@ -189,13 +189,15 @@ for idx, row in zi_base_current_df.iterrows():
     crime = crime_risk_df.loc[zipcode].CRMPYTOTC
     temp = temp_df.loc[zipcode].TMPAVEANN
     weather_rsk = temp_df.loc[zipcode].RSKCYRISK
+    carb_mono = data_df.at[idx,"carbon_monoxide"] =temp_df.loc[zipcode].CARBMONO
+    med_rent = recent_demo_df.loc[zipcode].RNTX4MED
+    walkability = data_df.at[idx,"walkability"] =temp_df.loc[zipcode].SLD22WALK
+    pm10 = data_df.at[idx,"particulate_matter"] = temp_df.loc[zipcode].PM10
+    no2 = data_df.at[idx,"Nitrogen Dioxde"] =temp_df.loc[zipcode].NO2
+    health_care = data_df.at[idx,"Health Care"] = zi_base_current_df.loc[zipcode].XCYHLT
 
     if houses_at_zip.shape[0] > 0:
-        # Get max price
-        #max_price = houses_at_zip["price"].max()
-        #min_price = houses_at_zip["price"].min()
-        #sq_ft_max = houses_at_zip["house_size"].max()
-        #sq_ft_min = houses_at_zip["house_size"].min()
+      
         avg_temp = temp_df.loc[zipcode].TMPAVEANN
         temp_weighted_score = (
             (avg_temp - temp_av_min) / (temp_av_max - temp_av_min)
@@ -220,8 +222,8 @@ for idx, row in zi_base_current_df.iterrows():
                 price_weighted_score
                 + footage_weighted_score
                 + crime_weighted_score
-                + temp_weighted_score + weather_rsk
-            )/5
+                + temp_weighted_score + weather_rsk + carb_mono+health_care+med_rent+walkability+pm10+no2
+            )/11
             data_df.at[idx,"weather_risk"] = weather_rsk
             data_df.at[idx,"crime_risk"] =crime
             data_df.at[idx,"crime"] = total_crime
