@@ -97,7 +97,8 @@ crime_risk_df.set_index("ID", inplace=True)
 crime_risk_stats_df = pd.read_csv(
     "Datasets/(Copy) VT/usa_zi_2024 crimerisk-statistics.csv"
 )
-
+recent_demo_df = pd.read_csv("Datasets/(Copy) VT/usa_zi_2024_demographic_estimates.csv",dtype={"ID": str})
+recent_demo_df.set_index("ID", inplace=True)
 zi_base_current_df = pd.read_csv(
     "Datasets/(Copy) VT/usa_zi_base_currentyear.csv", dtype={"ID": str}
 )
@@ -116,7 +117,6 @@ max_med_housing_value = data_df.price.max()
 # Get square foot min and max
 sq_ft_max = data_df.house_size.max()
 sq_ft_min = data_df.house_size.min()
-
 temp_stat_df = pd.read_csv(
     "Datasets/(Copy) VT/usa_zi_premium_environment-statistics.csv"
 )
@@ -186,6 +186,10 @@ for idx, row in zi_base_current_df.iterrows():
     # Get properties with the given zip code
     zipcode = idx
     houses_at_zip = data_df.loc[data_df["zip_code"] == zipcode]
+    crime = crime_risk_df.loc[zipcode].CRMPYTOTC
+    temp = temp_df.loc[zipcode].TMPAVEANN
+    weather_rsk = temp_df.loc[zipcode].RSKCYRISK
+
     if houses_at_zip.shape[0] > 0:
         # Get max price
         #max_price = houses_at_zip["price"].max()
@@ -216,15 +220,25 @@ for idx, row in zi_base_current_df.iterrows():
                 price_weighted_score
                 + footage_weighted_score
                 + crime_weighted_score
-                + temp_weighted_score
+                + temp_weighted_score + weather_rsk
             )
+            data_df.at[idx,"weather_risk"] = weather_rsk
+            data_df.at[idx,"crime_risk"] =crime
             data_df.at[idx,"crime"] = total_crime
-            data_df.at[idx,"weather"] = avg_temp
+            data_df.at[idx,"avg_temp"] = avg_temp
             data_df.at[idx, "Suitability"] = total_weighted_score
+            data_df.at[idx,"particulate_matter"] = temp_df.loc[zipcode].PM10
+            data_df.at[idx,"carbon_monoxide"] =temp_df.loc[zipcode].CARBMONO
+            data_df.at[idx,"walkability"] =temp_df.loc[zipcode].SLD22WALK
+            data_df.at[idx,"Nitrogen Dioxde"] =temp_df.loc[zipcode].NO2
+            data_df.at[idx,"Median Cash Rent"] = recent_demo_df.loc[zipcode].RNTX4MED
+            data_df.at[idx,"Health Care"] = zi_base_current_df.loc[zipcode].XCYHLT
 
-#data_df.to_csv("Suitability_score_house.csv")
+data_df.to_csv("Suitability_score_house.csv")
+data_df.dropna(inplace=True)
 lin_reg = LinearRegression()
 # remove 
+#Note to self: run dropna() before fitting
 X = data_df.drop(["status", "city", "brokered_by", "zip_code", 'prev_sold_date'], axis='columns')
 Y = data_df["Suitability"]
 train_x, test_x, train_y, test_y = train_test_split(X,Y,test_size=0.3, random_state=42, shuffle=True)
