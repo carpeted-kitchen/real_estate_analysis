@@ -206,7 +206,7 @@ max_health = base_current_stats_df.loc["XCYHLT"].MAXIMUM
 min_health = base_current_stats_df.loc["XCYHLT"].MINIMUM
 print("Going thru housing data")
 # Go thru zip codes instead
-for idx, row in zi_base_current_df.iloc[0:5000].iterrows():
+for idx, row in zi_base_current_df.iterrows():
     # Get properties with the given zip code
     zipcode = idx
     houses_at_zip = data_df.loc[data_df["zip_code"] == zipcode]

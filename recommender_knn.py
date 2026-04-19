@@ -12,6 +12,7 @@ import warnings
 
 
 training_data = pd.read_csv("Suitability_score_house.csv")
+training_data.dropna(inplace = True, axis = 'index')
 K = 10
 X = training_data.drop(["status", "city", "brokered_by", 'prev_sold_date'], axis='columns')
 Y = training_data["Suitability"]
