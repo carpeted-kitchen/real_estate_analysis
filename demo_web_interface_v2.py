@@ -42,4 +42,4 @@ if st.button("Find Homes"):
         st.write("No matching homes found.")
     else:
         st.write("### Top Recommendations")
-        st.dataframe(results[["price", "weather", "pred"]])
+        st.dataframe(results[["price", "weather_risk", "pred"]])
