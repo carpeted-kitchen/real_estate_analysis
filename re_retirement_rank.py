@@ -12,19 +12,20 @@ from sklearn.model_selection import train_test_split
 
 import pandas as pd
 import numpy as np
+import math
 
 searchplace = "New York, NY"  # Can enter state, region, city, zip
 
 #QoL is 27% of which 30% is based on crime rates and 25%  on weather
 
-home_price_wt = 0.24
-wthr_temp_wt = 0.07
-wthr_extm_wt = 0.0405
-les_wt = 0.027
-crime_wt = 0.081
-sq_ft_wt = 0.1
+home_price_wt = 1
+wthr_temp_wt = 1
+wthr_extm_wt = 1
+les_wt = 1
+crime_wt = 1
+sq_ft_wt = 1
 #Taxes weight
-tax_wt = 0.16
+tax_wt = 1
 
 url = "https://health.usnews.com/best-hospitals/search-data?specialty_id=IHQCANC&page=1"
 
@@ -123,6 +124,26 @@ temp_stat_df = pd.read_csv(
 temp_stat_df.set_index("VARIABLE", inplace=True)
 temp_av_max = temp_stat_df.loc["TMPAVEANN"].MAXIMUM
 temp_av_min = temp_stat_df.loc["TMPAVEANN"].MINIMUM
+max_no2 = temp_stat_df.loc["NO2"].MAXIMUM
+min_no2 = temp_stat_df.loc["NO2"].MINIMUM
+co_max = temp_stat_df.loc["CARBMONO"].MAXIMUM
+co_min = temp_stat_df.loc["CARBMONO"].MINIMUM
+pm10_max = temp_stat_df.loc["PM10"].MAXIMUM
+pm10_min = temp_stat_df.loc["PM10"].MINIMUM
+weather_risk_max = temp_stat_df.loc["RSKCYRISK"].MAXIMUM
+weather_risk_min = temp_stat_df.loc["RSKCYRISK"].MINIMUM
+
+
+def weighted_score_neg(val, maxval, minval):
+    return (maxval - val)/(maxval - minval)
+
+def weighted_score_pos(val,maxval, minval):
+    return (val - minval)/(maxval - minval)
+
+def weighted_score_ideal(val, ideal, maxval, minval):
+    numerator = abs(ideal - val)
+    denominator = max((ideal-minval),(ideal-maxval))
+    return 1 - (numerator/denominator)
 
 temp_df = pd.read_csv(
     "Datasets/(Copy) VT/usa_zi_premium_environment.csv", dtype={"ID": str}
@@ -174,27 +195,30 @@ min_price = data_df["price"].min()
 # Try it with proprties from New York
 #new_york_real_estate = data_df.loc[(data_df.state == "New York")]
 #new_york_real_estate.reset_index()
-
+med_rent_max = recent_demo_df.RNTX4MED.max()
+med_rent_min = recent_demo_df.RNTX4MED.min()
 senior_suitability = np.zeros(data_df.shape[0])
 data_df["Suitability"] = senior_suitability
 data_df["crime"] = np.zeros(data_df.shape[0])
-data_df["weather"] = np.zeros(data_df.shape[0])
-
+max_walkability = temp_stat_df.loc["SLD22WALK"].MAXIMUM
+min_walkability = temp_stat_df.loc["SLD22WALK"].MINIMUM
+max_health = base_current_stats_df.loc["XCYHLT"].MAXIMUM
+min_health = base_current_stats_df.loc["XCYHLT"].MINIMUM
 print("Going thru housing data")
 # Go thru zip codes instead
-for idx, row in zi_base_current_df.iterrows():
+for idx, row in zi_base_current_df.iloc[0:5000].iterrows():
     # Get properties with the given zip code
     zipcode = idx
     houses_at_zip = data_df.loc[data_df["zip_code"] == zipcode]
     crime = crime_risk_df.loc[zipcode].CRMPYTOTC
     temp = temp_df.loc[zipcode].TMPAVEANN
-    weather_rsk = temp_df.loc[zipcode].RSKCYRISK
-    carb_mono = data_df.at[idx,"carbon_monoxide"] =temp_df.loc[zipcode].CARBMONO
-    med_rent = recent_demo_df.loc[zipcode].RNTX4MED
-    walkability = data_df.at[idx,"walkability"] =temp_df.loc[zipcode].SLD22WALK
-    pm10 = data_df.at[idx,"particulate_matter"] = temp_df.loc[zipcode].PM10
-    no2 = data_df.at[idx,"Nitrogen Dioxde"] =temp_df.loc[zipcode].NO2
-    health_care = data_df.at[idx,"Health Care"] = zi_base_current_df.loc[zipcode].XCYHLT
+    weather_rsk = weighted_score_neg(temp_df.loc[zipcode].RSKCYRISK,weather_risk_max, weather_risk_min)
+    carb_mono = weighted_score_neg(temp_df.loc[zipcode].CARBMONO,co_max, co_min)
+    med_rent = weighted_score_neg(recent_demo_df.loc[zipcode].RNTX4MED, med_rent_max, med_rent_min)
+    walkability = weighted_score_pos(temp_df.loc[zipcode].SLD22WALK, max_walkability, min_walkability)
+    pm10 = weighted_score_neg(temp_df.loc[zipcode].PM10,pm10_max,pm10_min)
+    no2 = weighted_score_neg(temp_df.loc[zipcode].NO2,max_no2,min_no2)
+    health_care = weighted_score_neg(zi_base_current_df.loc[zipcode].XCYHLT, max_health, min_health)
 
     if houses_at_zip.shape[0] > 0:
       
@@ -224,8 +248,8 @@ for idx, row in zi_base_current_df.iterrows():
                 + crime_weighted_score
                 + temp_weighted_score + weather_rsk + carb_mono+health_care+med_rent+walkability+pm10+no2
             )/11
-            data_df.at[idx,"weather_risk"] = weather_rsk
-            data_df.at[idx,"crime_risk"] =crime
+            data_df.at[idx,"weather_risk"] = temp_df.loc[zipcode].RSKCYRISK
+            data_df.at[idx,"crime_risk"] =crime_risk_df.loc[zipcode].CRMPYTOTC
             data_df.at[idx,"crime"] = total_crime
             data_df.at[idx,"avg_temp"] = avg_temp
             data_df.at[idx, "Suitability"] = total_weighted_score
@@ -237,7 +261,7 @@ for idx, row in zi_base_current_df.iterrows():
             data_df.at[idx,"Health Care"] = zi_base_current_df.loc[zipcode].XCYHLT
 
 data_df.to_csv("Suitability_score_house.csv")
-data_df.dropna(inplace=True)
+data_df.dropna(inplace=True, axis = 'index')
 lin_reg = LinearRegression()
 # remove 
 #Note to self: run dropna() before fitting
