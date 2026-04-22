@@ -8,16 +8,26 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 from scipy import stats
 
-home_price_wt = 0.5
-weather_wt = 0.3
-crime_wt = 0.1
-sq_ft_wt = 0.1
-
-training_data = pd.read_csv("Suitability_score_house.csv")
-
 lin_reg = LinearRegression()
 
-X = training_data.drop(["status", "city", "brokered_by", "zip_code", 'prev_sold_date'], axis='columns')
+training_data = pd.read_csv("Suitability_score_house.csv")
+# to fix nan error
+# Drop rows where ANY of your scoring metrics are missing
+training_data.dropna(inplace=True)
+
+# This original training set matches data too closely
+# X = training_data.drop(["status", "city", "brokered_by", "zip_code", 'prev_sold_date'], axis='columns')
+
+# Ensure 'street' is dropped from X (LinearRegression only eats numbers)
+# and DROP the variables that were the 'strongest' drivers of the formula
+# to see if the model can still rank houses accurately.
+drop_cols = [
+    "status", "city", "brokered_by", "zip_code", "prev_sold_date",
+    "street", "Suitability",
+    "Health Care", "Nitrogen Dioxde", "particulate_matter" # Hidden features
+]
+
+X = training_data.drop(columns=[c for c in drop_cols if c in training_data.columns])
 Y = training_data["Suitability"]
 train_x, test_x, train_y, test_y = train_test_split(X,Y,test_size=0.3, random_state=42, shuffle=True)
 
@@ -42,7 +52,6 @@ def comprehensive_rule_baseline(df):
         return (df[col] - df[col].min()) / (df[col].max() - df[col].min() + 1e-9)
 
     # Replicating the 11-factor sum from re_retirement_rank.py
-    # Note the typo "Nitrogen Dioxde" from your original column name
     score = (
                     norm_neg("price") +
                     norm_neg("house_size") +
@@ -50,16 +59,14 @@ def comprehensive_rule_baseline(df):
                     norm_pos("avg_temp") +
                     norm_neg("weather_risk") +
                     norm_neg("carbon_monoxide") +
-                    norm_neg("Health Care") +
                     norm_neg("Median Cash Rent") +
-                    norm_pos("walkability") +
-                    norm_neg("particulate_matter") +
-                    norm_neg("Nitrogen Dioxde")
+                    norm_pos("walkability") 
             ) / 11
     return score
 
 
-test_df = test_x.copy()
+# use the original data for test_df, matched to test_x indices
+test_df = training_data.loc[test_x.index].copy()
 test_df["comp_baseline"] = comprehensive_rule_baseline(test_df)
 rule_corr, rule_p = stats.spearmanr(test_y, test_df["comp_baseline"])
 
@@ -67,18 +74,18 @@ print(f"Comprehensive Rule-Based Spearman: {rule_corr:.4f} (p-value: {rule_p:.4e
 
 # --- Improved Filtering Baseline ---
 def comprehensive_filtering_baseline(df):
-    # 1. Calculate the full suitability score for everyone
+    # Calculate the full suitability score for everyone
     full_scores = comprehensive_rule_baseline(df)
 
-    # 2. Define "Dealbreakers"
+    # Define "Dealbreakers"
     # High Price or High Healthcare Index (since code treats high XCYHLT as bad)
     price_cutoff = df["price"].quantile(0.75)
     health_cutoff = df["Health Care"].quantile(0.75)
 
-    # 3. Apply Filter
+    # Apply Filter
     passes_filter = (df["price"] <= price_cutoff) & (df["Health Care"] <= health_cutoff)
 
-    # 4. Survivors keep their score, failures get 0
+    # Survivors keep their score, failures get 0
     df_result = pd.Series(0.0, index=df.index)
     df_result[passes_filter] = full_scores[passes_filter]
 
