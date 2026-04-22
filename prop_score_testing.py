@@ -22,6 +22,8 @@ training_data.dropna(inplace=True)
 # and DROP the variables that were the 'strongest' drivers of the formula
 # to see if the model can still rank houses accurately.
 drop_cols = [
+    # commented out code below for ablation testing by dropping price, house_size, avg_temp, crime_risk, walkability
+    # "price","house_size","crime_risk","avg_temp","walkability",
     "status", "city", "brokered_by", "zip_code", "prev_sold_date",
     "street", "Suitability",
     "Health Care", "Nitrogen Dioxde", "particulate_matter" # Hidden features
