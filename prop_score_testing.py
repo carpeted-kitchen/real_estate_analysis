@@ -33,51 +33,62 @@ print("R-squared: ", r2_lin_pred)
 print("Spearman correlation: ", res.correlation)
 print("Spearman significance: ", res.pvalue)
 
+# --- Improved Rule-Based Baseline ---
+def comprehensive_rule_baseline(df):
+    def norm_neg(col):  # Lower is better
+        return (df[col].max() - df[col]) / (df[col].max() - df[col].min() + 1e-9)
 
-# below is from ChatGPT for Add Baseline Comparison
-# Since your rule-based baseline = Suitability, simulate comparison:
-baseline_preds = (
-    -0.5 * test_x["price"] + # negative to rank cheaper houses higher
-    0.3 * test_x["weather"] +
-    -0.1 * test_x["crime"] + # negative to rank low crime houses higher
-    0.1 * test_x["house_size"]
-)
+    def norm_pos(col):  # Higher is better
+        return (df[col] - df[col].min()) / (df[col].max() - df[col].min() + 1e-9)
 
-ml_corr = stats.spearmanr(test_y, y_pred_lin).correlation
-baseline_corr = stats.spearmanr(test_y, baseline_preds).correlation
+    # Replicating the 11-factor sum from re_retirement_rank.py
+    # Note the typo "Nitrogen Dioxde" from your original column name
+    score = (
+                    norm_neg("price") +
+                    norm_neg("house_size") +
+                    norm_neg("crime_risk") +
+                    norm_pos("avg_temp") +
+                    norm_neg("weather_risk") +
+                    norm_neg("carbon_monoxide") +
+                    norm_neg("Health Care") +
+                    norm_neg("Median Cash Rent") +
+                    norm_pos("walkability") +
+                    norm_neg("particulate_matter") +
+                    norm_neg("Nitrogen Dioxde")
+            ) / 11
+    return score
 
-print("ML Spearman correlation:", ml_corr)
-print("Baseline Spearman:", baseline_corr)
 
-# from ChatGPT for Add Simple Filtering Baseline for evaluation
-filtered = training_data[
-    (training_data["price"] <= 450000) &
-    (training_data["crime"] < training_data["crime"].quantile(0.5))
-]
-# --- Filtering baseline (on test set) ---
 test_df = test_x.copy()
-test_df["true"] = test_y
+test_df["comp_baseline"] = comprehensive_rule_baseline(test_df)
+rule_corr, rule_p = stats.spearmanr(test_y, test_df["comp_baseline"])
 
-filtered_test = test_df[
-    (test_df["price"] <= 450000) &
-    (test_df["crime"] < test_df["crime"].quantile(0.5))
-].copy()
+print(f"Comprehensive Rule-Based Spearman: {rule_corr:.4f} (p-value: {rule_p:.4e})")
 
-if len(filtered_test) > 5:
-    filtered_test["filter_score"] = (
-        -filtered_test["price"] +
-        -filtered_test["crime"] +
-        filtered_test["weather"] +
-        filtered_test["house_size"]
-    )
-    filter_corr = stats.spearmanr(
-        filtered_test["true"],
-        filtered_test["filter_score"]
-    ).correlation
+# --- Improved Filtering Baseline ---
+def comprehensive_filtering_baseline(df):
+    # 1. Calculate the full suitability score for everyone
+    full_scores = comprehensive_rule_baseline(df)
 
-    print("Filtering Spearman:", filter_corr)
-else:
-    print("Filtering baseline: Not enough data")
+    # 2. Define "Dealbreakers"
+    # High Price or High Healthcare Index (since code treats high XCYHLT as bad)
+    price_cutoff = df["price"].quantile(0.75)
+    health_cutoff = df["Health Care"].quantile(0.75)
+
+    # 3. Apply Filter
+    passes_filter = (df["price"] <= price_cutoff) & (df["Health Care"] <= health_cutoff)
+
+    # 4. Survivors keep their score, failures get 0
+    df_result = pd.Series(0.0, index=df.index)
+    df_result[passes_filter] = full_scores[passes_filter]
+
+    return df_result
+
+
+test_df["comp_filter"] = comprehensive_filtering_baseline(test_df)
+filt_corr, filt_p = stats.spearmanr(test_y, test_df["comp_filter"])
+
+print(f"Comprehensive Filtering Spearman: {filt_corr:.4f} (p-value: {filt_p:.4e})")
 
 # filtered_top = filtered.sort_values("Suitability", ascending=False).head(5)
 # print("Filtering baseline top 5:")
