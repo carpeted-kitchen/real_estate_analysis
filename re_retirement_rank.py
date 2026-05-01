@@ -250,7 +250,7 @@ for idx, row in zi_base_current_df.iterrows():
             )/11
             data_df.at[idx,"weather_risk"] = temp_df.loc[zipcode].RSKCYRISK
             data_df.at[idx,"crime_risk"] =crime_risk_df.loc[zipcode].CRMPYTOTC
-            data_df.at[idx,"crime"] = total_crime
+            #data_df.at[idx,"crime"] = total_crime
             data_df.at[idx,"avg_temp"] = avg_temp
             data_df.at[idx, "Suitability"] = total_weighted_score
             data_df.at[idx,"particulate_matter"] = temp_df.loc[zipcode].PM10
